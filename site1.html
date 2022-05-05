@@ -4,22 +4,22 @@
 
   </head>
 <body>
-  style="display: flex; width:100%; "
-  <div >
+  
+  <div style="display: flex; width:100%; ">
   <img  src="https://www.ufrn.br/resources/documentos/identidadevisual/logotipo/logotipo_gradiente.png" id="logo">
   
   <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#News">News</a></li>
+    <li><a href="#Contact">Contact</a></li>
+    <li><a href="#About">About</a></li>
     
   </ul>
  </div>
 
-<h2>criar uma barra aqui</h2>
 
-<div style="display: flex; padding: 10px; background: #CCC; height:650px">
+
+<div style="display: flex; padding: 10px; background: #cfd8e0; height:650px">
   <div class="row" style="display: flex; width:100%; ">
     
     <div class="col">
@@ -65,6 +65,7 @@
     </div>
     <div class="col">
       <p>Semestre 7</p>
+      <p></p>
     </div>
     
     </div>
@@ -74,51 +75,67 @@
 
 
 
-<p>criar outra barra aqui.</p>
+
 
 </body>
 
 	<style>
     #logo{
-      width: 100px;
-      height: auto;
+      width: auto;
+      height: 40px;
+      align-self: center;
     }
     ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color:#0095db;
+  width: 100%;
 }
 
 li {
   float: left;
 }
 
+li a:hover{
+  background-color: #111;
+}
+
 li a {
   display: block;
-  padding: 8px;
-  background-color: #dddddd;
+
+  padding: 15px 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
 }
   * {
     padding:0;
     margin:0;
     column-gap: 5px;
-    row-gap: 10px;
+    row-gap: 5px;
     
   }
   
+
 .row > .col {
-  display: flex;
+  display: grid;
+  align-items: center;
   flex-direction: column;
-  width: 150px;
+  width: 200px;
   height: 100px;
   
 }
   .row > .col > p {
-    padding: 10px 25px;
-    width: 50%;
+    padding: 10px;
+    text-align: center;
     background: #EEE;
+    width: 150px;
+    height: 50px;
+    
   }
 
 </style>
 </html>
+
