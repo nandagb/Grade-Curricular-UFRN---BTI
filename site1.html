@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <title>Grade Curricular Tecnologia da Informação</title>
   </head>
 <body>
   
@@ -19,60 +19,22 @@
   </ul>
  </div>
 
-<!-- 
-  grade de cc
-  4 periodo:
-  <p>Circuitos Lógicos</p>
-  <p>Matemática para Engenharia II</p>
-  <p>Algebra Linear para Computação</p>
-
-  5 periodo:
-  <p>Organização de Computadores</p>
-  <p>Grafos</p>
-  <p>Fundamentos Matemáticos da Computação III</p>
-  <p>Estatistica Aplicada a Engenharia I</p>
-  <p>Cálculo Numérico para Ciência da Computação</p>
-
-  6 periodo:
-  <p>Projeto de Software</p>
-  <p>Projeto e Análise de Algoritmos</p>
-  <p>Linguagens Formais e Autômatos</p>
-
-  7 periodo:
-  <p>Programação Concorrente</p>
-  <p>Linguagem de Programação: Conceitos e Paradigmas</p>
-  <p>Lógica Computacional</p>
-
-  grade ds:
-  4 perioo:
-  <p>Boas Práticas de Programação</p>
-  <p>Análise e Projeto Orientado a Objetos</p>
-  <p>Projeto de Interface de Usuário</p>
-  
-  5 periodo:
-  <p>Desenvolvimento de Sistemas Web I</p>
-  <p>Grafos</p>
-  <p>Banco de Dados (xh)</p>
-  <p>Projeto detalhado de Software</p>
-  <p>Teste de Software</p>
-
-  6 periodo:
-  <p>Programação Concorrente</p>
-  <p>Desenvolvimento de Sistemas Web II</p>
-  <p>Lógica Aplicada à Engenharia de Software</p>
-  
-  7 periodo:
-  <p>Programação Distribuída</p>
-  <p>Engenharia de Linguagens</p>
-  <p>Métodos formais de Engenharia de Software</p>
-  <p>Engenharia de Requisitos</p>
-
--->
 
 <div style="display: flex; padding: 10px; background: #cfd8e0; height:650px">
-  <div class="row" style="display: flex; width:100%; ">
+
+  <div class="col" style="display: flex; width:100%; ">
     
-    <div class="col">
+    <div class="row">
+      <p>Semestre 1</p>
+      <p>Semestre 2</p>
+      <p>Semestre 3</p>
+      <p>Semestre 4</p>
+      <p>Semestre 5</p>
+      <p>Semestre 6</p>
+      <p>Semestre 7</p>
+    </div>
+
+    <div class="row">
       <p>Semestre 1</p>
       <p>Matemática Elementar</p>
 			<p>Geometria Euclidiana</p>
@@ -83,7 +45,7 @@
       <p>Práticas de Leitura e Escrita em Português I</p>
       
     </div>
-    <div class="col">
+    <div class="row">
       <p>Semestre 2</p>
       <p>Fundamentos Matemáticos da Computação I</p>
       <p>Introdução a Tecnicas de Programação</p>
@@ -91,7 +53,7 @@
       <p>Vetores e Geometria Analítica</p>
       <p>Práticas de Leitura e Escrita em Português II</p>
     </div>
-    <div class="col">
+    <div class="row">
       <p>Semestre 3</p>
       <p>Fundamentos Matemáticos da Computação II</p>
       <p>Estruturas de Dados Básicas I</p>
@@ -100,7 +62,7 @@
       <p>Probabilidade</p>
       
     </div>
-    <div class="col">
+    <div class="row">
       <p>Semestre 4</p>
       <p>Estruturas de Dados Básicas II</p>
       <p>Linguagem de Programação II</p>
@@ -109,24 +71,26 @@
     
       
     </div>
-    <div class="col">
+    <div class="row">
       <p>Semestre 5</p>
       <p>Redes de Computadores</p>
       <p>Componente Curricular Optativo (xh)</p>
       
     </div>
-    <div class="col">
+    <div class="row">
       <p>Semestre 6</p>
       <p>Banco de Dados</p>
       <p>Componente Curricular Optativo (xh)</p>
       
     </div>
-    <div class="col">
+    <div class="row">
       <p>Semestre 7</p>
       <p>Componente Curricular Optativo (xh)</p>
     </div>
     
     </div>
+
+    
   </div>
   
 </div>
@@ -177,7 +141,7 @@ li a {
   }
   
 
-.row > .col {
+.col > .row {
   display: grid;
   align-items: center;
   flex-direction: column;
@@ -185,7 +149,7 @@ li a {
   height: 100px;
   
 }
-  .row > .col > p {
+  .col > .row > p {
     padding: 10px;
     text-align: center;
     background: #EEE;
