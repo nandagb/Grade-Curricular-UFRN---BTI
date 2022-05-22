@@ -5,7 +5,7 @@
 
     <link rel="stylesheet" href="style.css">
   </head>
-<body>
+<body onload="addEventos()">
   
   <div style="display: flex; width:100%; ">
   <a href="https://www.ufrn.br/" target="_blank"><img  src="imagens/logo uf.png" id="logo"></a>
@@ -38,22 +38,22 @@
 
     <div class="row">
       <p>Semestre 1</p>
-      <p>Matemática Elementar</p>
-			<p>Geometria Euclidiana</p>
-			<p>Pensamento Computacional</p>
-			<p>Análise Combinatória</p>
+      <p id ="ME">Matemática Elementar</p>
+			<p id ="GE">Geometria Euclidiana</p>
+			<p id = "PC">Pensamento Computacional</p>
+			<p id="AC">Análise Combinatória</p>
       <p>Tecnologia da Informação e Sociedade</p>
       <p>Práticas de Leitura em Inglês</p>
-      <p>Práticas de Leitura e Escrita em Português I</p>
+      <p id = "PLEI">Práticas de Leitura e Escrita em Português I</p>
       
     </div>
     <div class="row">
       <p>Semestre 2</p>
-      <p>Fundamentos Matemáticos da Computação I</p>
-      <p>Introdução a Tecnicas de Programação</p>
-      <p>Matemática para Engenharia I</p>
-      <p>Vetores e Geometria Analítica</p>
-      <p>Práticas de Leitura e Escrita em Português II</p>
+      <p id ="FMCI">Fundamentos Matemáticos da Computação I</p>
+      <p id = "ITP">Introdução a Tecnicas de Programação</p>
+      <p id = "CAL">Matemática para Engenharia I</p>
+      <p id = "VGA" >Vetores e Geometria Analítica</p>
+      <p id = "PLEII">Práticas de Leitura e Escrita em Português II</p>
     </div>
     <div class="row">
       <p>Semestre 3</p>
@@ -61,7 +61,7 @@
       <p>Estruturas de Dados Básicas I</p>
       <p>Linguagem de Programação I</p>
       <p>Arquitetura de Computadores</p>
-      <p>Probabilidade</p>
+      <p id="PROB">Probabilidade</p>
       
     </div>
     <div class="row">
@@ -99,7 +99,7 @@
 
 
 
-
+<script src="principal.js"></script>
 
 </body>
 </html>
