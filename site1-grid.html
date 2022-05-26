@@ -6,7 +6,7 @@
   <title>Grid example</title>  
   <link rel="stylesheet" href="style-3.css">
 </head>
-  <body>
+  <body onload="addEventos()">
 
     <div style="display: flex; width:100%; ">
       <a href="https://www.ufrn.br/" target="_blank"><img  src="imagens/logo uf.png" id="logo"></a>
@@ -31,32 +31,32 @@
       <div class="grid-item grid-item-1">Semestre 6</div>
       <div class="grid-item grid-item-1">Semestre 7</div>
 
-      <div class="grid-item grid-item-2">Matemática Elementar</div>
-      <div class="grid-item grid-item-3">Fundamentos Matemáticos da Computação I</div>
+      <div id ="ME" class="grid-item grid-item-2">Matemática Elementar</div>
+      <div id ="FMCI" class="grid-item grid-item-3">Fundamentos Matemáticos da Computação I</div>
       <div class="grid-item grid-item-4">Fundamentos Matemáticos da Computação II</div>
       <div class="grid-item grid-item-5">Estruturas de Dados Básicas II</div>
       <div class="grid-item grid-item-6">Redes de Computadores</div>
       <div class="grid-item grid-item-7">Banco de Dados</div>
       <div class="grid-item grid-item-8">Componente Curricular Optativo (xh)</div>
      
-      <div class="grid-item grid-item-2">Geometria Euclidiana</div>
-      <div class="grid-item grid-item-3">Introdução a Tecnicas de Programação</div>
+      <div id ="GE" class="grid-item grid-item-2">Geometria Euclidiana</div>
+      <div id = "ITP" class="grid-item grid-item-3">Introdução a Tecnicas de Programação</div>
       <div class="grid-item grid-item-4">Estruturas de Dados Básicas I</div>
       <div class="grid-item grid-item-5">Linguagem de Programação II</div>
       <div class="grid-item grid-item-6">Componente Curricular Optativo (xh)</div>
       <div class="grid-item grid-item-7">Componente Curricular Optativo (xh)</div>
       <div class="grid-item grid-item-9"></div>
 
-      <div class="grid-item grid-item-2">Pensamento Computacional</div>
-      <div class="grid-item grid-item-3">Matemática para Engenharia I</div>
+      <div id = "PC" class="grid-item grid-item-2">Pensamento Computacional</div>
+      <div id = "CAL" class="grid-item grid-item-3">Matemática para Engenharia I</div>
       <div class="grid-item grid-item-4">Linguagem de Programação I</div>
       <div class="grid-item grid-item-5">Sistemas Operacionais</div>
       <div class="grid-item grid-item-9"></div>
       <div class="grid-item grid-item-9"></div>
       <div class="grid-item grid-item-9"></div>
 
-      <div class="grid-item grid-item-2">Análise Combinatória</div>
-      <div class="grid-item grid-item-3">Vetores e Geometria Analítica</div>
+      <div id="AC" class="grid-item grid-item-2">Análise Combinatória</div>
+      <div id = "VGA" class="grid-item grid-item-3">Vetores e Geometria Analítica</div>
       <div class="grid-item grid-item-4">Arquitetura de Computadores</div>
       <div class="grid-item grid-item-5">Componente Curricular Optativo (xh)</div>
       <div class="grid-item grid-item-9"></div>
@@ -64,8 +64,8 @@
       <div class="grid-item grid-item-9"></div>
 
       <div class="grid-item grid-item-2">Tecnologia da Informação e Sociedade</div>
-      <div class="grid-item grid-item-3">Práticas de Leitura e Escrita em Português II</div>
-      <div class="grid-item grid-item-4">Probabilidade</div>
+      <div id = "PLEII" class="grid-item grid-item-3">Práticas de Leitura e Escrita em Português II</div>
+      <div id="PROB" class="grid-item grid-item-4">Probabilidade</div>
       <div class="grid-item grid-item-9"></div>
       <div class="grid-item grid-item-9"></div>
       <div class="grid-item grid-item-9"></div>
@@ -79,7 +79,7 @@
       <div class="grid-item grid-item-9"></div>
       <div class="grid-item grid-item-9"></div>
 
-      <div class="grid-item grid-item-2">Práticas de Leitura e Escrita em Português I</div>
+      <div id = "PLEI" class="grid-item grid-item-2">Práticas de Leitura e Escrita em Português I</div>
       <div class="grid-item grid-item-9"></div>
       <div class="grid-item grid-item-9"></div>
       <div class="grid-item grid-item-9"></div>
@@ -88,6 +88,6 @@
       <div class="grid-item grid-item-9"></div>
 
     </div>
-    
+    <script src="principal.js"></script>
   </body>
   </html>
