@@ -1,71 +1,63 @@
+.grid-container {
+    display: grid; 
+    grid-template-columns: repeat(7, 170px);
+    grid-template-rows: 30px repeat(7, 80px);
+    background-color: #cfd8e0;
+    height: 100vh;
+    width: auto;
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 15px;
+    justify-content: center;
+    align-content: center;    
+}
+
+.grid-item{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: #EEE;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2ch;
+    font-weight: 100;
+}
+
+.grid-item-9{
+    background-color: #cfd8e0;
+}
+
+.grid-item-1{
+    font-weight: bold;
+}
+
 #logo{
     width: auto;
     height: 40px;
     align-self: center;
-  }
-  ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color:#0095db;
-width: 100%;
 }
 
-li {
-float: left;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#0095db;
+    width: 100%;
 }
-
-li a:hover{
-background-color: #111;
-}
-
-li a {
-display: block;
-
-padding: 15px 20px;
-color: white;
-text-align: center;
-text-decoration: none;
-}
-* {
-  padding:0;
-  margin:0;
-  column-gap: 5px;
-  row-gap: 5px;
-  
-}
-
-
-.row > .col {
-display: grid;
-align-items: center;
-flex-direction: column;
-width: 200px;
-height: 100px;
-
-}
-.row > .col > p {
-  padding: 10px;
-  text-align: center;
-  background: #EEE;
-  width: 150px;
-  height: 50px;
-  
-}
-.col > .row {
-    display: grid;
-    align-items: center;
-    flex-direction: column;
-    width: 200px;
-    height: 100px;
     
+li {
+    float: left;
 }
-.col > .row > p {
-    padding: 10px;
+    
+li a:hover{
+    background-color: #111;
+}
+    
+li a {
+    display: block;
+    
+    padding: 15px 20px;
+    color: white;
     text-align: center;
-    background: #EEE;
-    width: 150px;
-    height: 50px;
-      
+    text-decoration: none;
 }
