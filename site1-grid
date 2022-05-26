@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  
+  <title>Grid example</title>  
+  <link rel="stylesheet" href="style-3.css">
+</head>
+  <body>
+
+    <div style="display: flex; width:100%; ">
+      <a href="https://www.ufrn.br/" target="_blank"><img  src="imagens/logo uf.png" id="logo"></a>
+      
+      
+      <ul>
+        
+        <li><a href="site1.html">Tecnologia da Informação</a></li>
+        <li><a href="pag-cc.html">Ciência da Computação</a></li>
+        <li><a href="pag-ds.html">Desenvolvimento de Software</a></li>
+       
+        
+      </ul>
+     </div>
+
+    <div class="grid-container">
+      <div class="grid-item grid-item-1">Semestre 1</div>
+      <div class="grid-item grid-item-1">Semestre 2</div>
+      <div class="grid-item grid-item-1">Semestre 3</div>
+      <div class="grid-item grid-item-1">Semestre 4</div>
+      <div class="grid-item grid-item-1">Semestre 5</div>
+      <div class="grid-item grid-item-1">Semestre 6</div>
+      <div class="grid-item grid-item-1">Semestre 7</div>
+
+      <div class="grid-item grid-item-2">Matemática Elementar</div>
+      <div class="grid-item grid-item-3">Fundamentos Matemáticos da Computação I</div>
+      <div class="grid-item grid-item-4">Fundamentos Matemáticos da Computação II</div>
+      <div class="grid-item grid-item-5">Estruturas de Dados Básicas II</div>
+      <div class="grid-item grid-item-6">Redes de Computadores</div>
+      <div class="grid-item grid-item-7">Banco de Dados</div>
+      <div class="grid-item grid-item-8">Componente Curricular Optativo (xh)</div>
+     
+      <div class="grid-item grid-item-2">Geometria Euclidiana</div>
+      <div class="grid-item grid-item-3">Introdução a Tecnicas de Programação</div>
+      <div class="grid-item grid-item-4">Estruturas de Dados Básicas I</div>
+      <div class="grid-item grid-item-5">Linguagem de Programação II</div>
+      <div class="grid-item grid-item-6">Componente Curricular Optativo (xh)</div>
+      <div class="grid-item grid-item-7">Componente Curricular Optativo (xh)</div>
+      <div class="grid-item grid-item-9"></div>
+
+      <div class="grid-item grid-item-2">Pensamento Computacional</div>
+      <div class="grid-item grid-item-3">Matemática para Engenharia I</div>
+      <div class="grid-item grid-item-4">Linguagem de Programação I</div>
+      <div class="grid-item grid-item-5">Sistemas Operacionais</div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+
+      <div class="grid-item grid-item-2">Análise Combinatória</div>
+      <div class="grid-item grid-item-3">Vetores e Geometria Analítica</div>
+      <div class="grid-item grid-item-4">Arquitetura de Computadores</div>
+      <div class="grid-item grid-item-5">Componente Curricular Optativo (xh)</div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+
+      <div class="grid-item grid-item-2">Tecnologia da Informação e Sociedade</div>
+      <div class="grid-item grid-item-3">Práticas de Leitura e Escrita em Português II</div>
+      <div class="grid-item grid-item-4">Probabilidade</div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+
+      <div class="grid-item grid-item-2">Práticas de Leitura em Inglês</div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+
+      <div class="grid-item grid-item-2">Práticas de Leitura e Escrita em Português I</div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+      <div class="grid-item grid-item-9"></div>
+
+    </div>
+    
+  </body>
+  </html>
