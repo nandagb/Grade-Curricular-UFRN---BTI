@@ -83,7 +83,7 @@ a.active{background-color:#0095db;color:white}
 	height:100px;
 }
 
-@media (min-width:467px){.hide-default{display:none!important}}
+@media (min-width:507px){.hide-default{display:none!important}}
 
 @media (max-width:466px){
     .dropdown-hover.mobile .dropdown-content,.dropdown-click.mobile .dropdown-content{position:relative}	
