@@ -1,0 +1,68 @@
+<!DOCTYÉ html>
+<html>
+<head>
+
+<title>Inicio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<div>
+<!-- Barra de navegação default -->
+<div class="navbar white left">
+    <a href="https://www.ufrn.br/" title="Ir para o Portal da UFRN" target="_blank" class="navbar-item logo">
+        <img class=".scale-down" src="https://logodownload.org/wp-content/uploads/2018/04/ufrn-logo.png" alt="Logomarca da UFRN" style="height:18px">
+    </a>
+	<a id="fabars" class="navbar-item button hide-default right padding-square" onclick="showMenu()" title="Abrir Menu de Navegação">
+	<i class="fa fa-bars"></i></a>
+    <a href="#" class="active navbar-item button hide-mobile">INICIO</a>
+    <a href="bti.html" class="navbar-item button hide-mobile">BTI</a>
+    <a href="ecc.html" class="navbar-item button hide-mobile">ECC</a>
+    <a href="eds.html" class="navbar-item button hide-mobile">EDS</a>
+    <a href="login.html" class="navbar-item button right hide-mobile">LOGIN</a>
+</div>
+
+<!-- Barra de navegação mobile -->
+<div id="navMobile" class="navbar-block center white hide hide-default top left" style="margin-top:46px">
+  <a href="#" class="active navbar-item button" onclick="showMenu()">INICIO</a>
+  <a href="bti.html" class="navbar-item button" onclick="showMenu()">BTI</a>
+  <a href="ecc.html" class="navbar-item button" onclick="showMenu()">ECC</a>
+  <a href="eds.html" class="navbar-item button" onclick="showMenu()">EDS</a>
+  <a href="login.html" class="navbar-item button" onclick="showMenu()">LOGIN</a>
+</div>
+</div>
+
+<div id="escurecer" class="menu_bg hide hide-default"></div>
+
+<script>
+
+<!-- Usada para habilitar o menu em tela pequena quando clicado no botão -->
+function showMenu() {
+  var x = document.getElementById("navMobile");
+  if (x.className.indexOf("show") == -1) {
+    x.className += " show";
+  } else { 
+    x.className = x.className.replace(" show", "");
+  }
+  var y = document.getElementById("fabars");
+  if (y.className.indexOf("active") == -1) {
+    y.className += " active";
+  } else { 
+    y.className = y.className.replace(" active", "");
+  }
+  var z = document.getElementById("escurecer");
+  if (z.className.indexOf("show") == -1) {
+    z.className += " show";
+  } else { 
+    z.className = z.className.replace(" show", "");
+  }
+}
+
+</script>
+
+</body>
+</html>

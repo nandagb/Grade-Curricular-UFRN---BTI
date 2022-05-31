@@ -1,0 +1,141 @@
+<!DOCTYÉ html>
+<html>
+<head>
+
+<title>Ênfase BTI - Desenvolvimento de Software</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="estilo-grid.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<div>
+<!-- Barra de navegação default -->
+<div class="navbar white left">
+    <a href="https://www.ufrn.br/" title="Ir para o Portal da UFRN" target="_blank" class="navbar-item logo">
+        <img class=".scale-down" src="https://logodownload.org/wp-content/uploads/2018/04/ufrn-logo.png" alt="Logomarca da UFRN" style="height:18px">
+    </a>
+	<a id="fabars" class="navbar-item button hide-default right padding-square" onclick="showMenu()" title="Abrir Menu de Navegação">
+	<i class="fa fa-bars"></i></a>
+    <a href="inicio.html" class="navbar-item button hide-mobile">INICIO</a>
+    <a href="bti.html" class="navbar-item button hide-mobile">BTI</a>
+    <a href="ecc.html" class="navbar-item button hide-mobile">ECC</a>
+    <a href="#" class="active navbar-item button hide-mobile">EDS</a>
+    <a href="login.html" class="navbar-item button right hide-mobile">LOGIN</a>
+</div>
+
+<!-- Barra de navegação mobile -->
+<div id="navMobile" class="navbar-block center white hide hide-default top left" style="margin-top:46px">
+  <a href="inicio.html" class="navbar-item button" onclick="showMenu()">INICIO</a>
+  <a href="bti.html" class="navbar-item button" onclick="showMenu()">BTI</a>
+  <a href="ecc.html" class="navbar-item button" onclick="showMenu()">ECC</a>
+  <a href="#" class="active navbar-item button" onclick="showMenu()">EDS</a>
+  <a href="login.html" class="navbar-item button" onclick="showMenu()">LOGIN</a>
+</div>
+</div>
+
+<div id="escurecer" class="menu_bg hide hide-default"></div>
+
+<div>
+	<div id="inv_block"></div>
+
+	<div class="grid-container" style="overflow:auto;">
+		<div class="grid-item grid-item-1">Semestre 1</div>
+		<div class="grid-item grid-item-1">Semestre 2</div>
+		<div class="grid-item grid-item-1">Semestre 3</div>
+		<div class="grid-item grid-item-1">Semestre 4</div>
+		<div class="grid-item grid-item-1">Semestre 5</div>
+		<div class="grid-item grid-item-1">Semestre 6</div>
+		<div class="grid-item grid-item-1">Semestre 7</div>
+
+		<div id ="ME" class="grid-item grid-item-2">Matemática Elementar</div>
+		<div id ="FMCI" class="grid-item grid-item-3">Fundamentos Matemáticos da Computação I</div>
+		<div class="grid-item grid-item-4">Fundamentos Matemáticos da Computação II</div>
+		<div class="grid-item grid-item-5">Estruturas de Dados Básicas II</div>
+		<div class="grid-item grid-item-6">Redes de Computadores</div>
+		<div class="grid-item grid-item-7">Banco de Dados</div>
+		<div id = "7-empty1" class="grid-item grid-item-8">Programação Distribuída</div>
+		 
+		<div id ="GE" class="grid-item grid-item-2">Geometria Euclidiana</div>
+		<div id = "ITP" class="grid-item grid-item-3">Introdução a Tecnicas de Programação</div>
+		<div class="grid-item grid-item-4">Estruturas de Dados Básicas I</div>
+		<div class="grid-item grid-item-5">Linguagem de Programação II</div>
+		<div id="5-empty1" class="grid-item grid-item-6">Desenvolvimento de Sistemas Web I</div>
+		<div id="6-empty1" class="grid-item grid-item-7">Programação Concorrente</div>
+		<div id="7-empty2" class="grid-item grid-item-8">Engenharia de Linguagens</div>
+
+		<div id = "PC" class="grid-item grid-item-2">Pensamento Computacional</div>
+		<div id = "CAL" class="grid-item grid-item-3">Matemática para Engenharia I</div>
+		<div class="grid-item grid-item-4">Linguagem de Programação I</div>
+		<div class="grid-item grid-item-5">Sistemas Operacionais</div>
+		<div id="5-empty2" class="grid-item grid-item-6">Grafos</div>
+		<div id="6-empty2" class="grid-item grid-item-7">Desenvolvimento de Sistemas Web II</div>
+		<div id="7-empty3" class="grid-item grid-item-8">Métodos Formais de Engenharia de Software</div>
+
+		<div id="AC" class="grid-item grid-item-2">Análise Combinatória</div>
+		<div id = "VGA" class="grid-item grid-item-3">Vetores e Geometria Analítica</div>
+		<div class="grid-item grid-item-4">Arquitetura de Computadores</div>
+		<div id="4-empty1" class="grid-item grid-item-5">Boas Práticas de Programação</div>
+		<div id="5-empty3" class="grid-item grid-item-6">Banco de Dados (xh)</div>
+		<div id="6-empty3" class="grid-item grid-item-7">Lógica Aplicada à Engenharia de Software</div>
+		<div id="7-empty4" class="grid-item grid-item-8">Engenharia de Requisitos</div>
+
+		<div class="grid-item grid-item-2">Tecnologia da Informação e Sociedade</div>
+		<div id = "PLEII" class="grid-item grid-item-3">Práticas de Leitura e Escrita em Português II</div>
+		<div id="PROB" class="grid-item grid-item-4">Probabilidade</div>
+		<div id="4-empty2" class="grid-item grid-item-5">Análise e Projeto Orientado a Objetos</div>
+		<div id="5-empty4" class="grid-item grid-item-6">Projeto Detalhado de Software</div>
+		<div id="6-empty4" class="grid-item grid-item-7">Componente Curricular Optativo (xh)</div>
+		<div class="grid-item grid-item-8">Componente Curricular Optativo (xh)</div>
+
+		<div class="grid-item grid-item-2">Práticas de Leitura em Inglês</div>
+		<div class="grid-item grid-item-9"></div>
+		<div class="grid-item grid-item-9"></div>
+		<div id="4-empty3" class="grid-item grid-item-5">Projeto de Interface de Usuário</div>
+		<div id="5-empty5" class="grid-item grid-item-6">Teste de Software</div>
+		<div class="grid-item grid-item-9"></div>
+		<div class="grid-item grid-item-9"></div>
+
+		<div id = "PLEI" class="grid-item grid-item-2">Práticas de Leitura e Escrita em Português I</div>
+		<div class="grid-item grid-item-9"></div>
+		<div class="grid-item grid-item-9"></div>
+		<div id="4-empty4" class="grid-item grid-item-5">Componente Curricular Optativo (xh)</div>
+		<div id="5-empty6" class="grid-item grid-item-6">Componente Curricular Optativo (xh)</div>
+		<div class="grid-item grid-item-9"></div>
+		<div class="grid-item grid-item-9"></div>
+	</div>
+	
+	<div id="inv_block"></div>
+</div>
+
+<script>
+
+<!-- Usada para habilitar o menu em tela pequena quando clicado no botão -->
+function showMenu() {
+  var x = document.getElementById("navMobile");
+  if (x.className.indexOf("show") == -1) {
+    x.className += " show";
+  } else { 
+    x.className = x.className.replace(" show", "");
+  }
+  var y = document.getElementById("fabars");
+  if (y.className.indexOf("active") == -1) {
+    y.className += " active";
+  } else { 
+    y.className = y.className.replace(" active", "");
+  }
+  var z = document.getElementById("escurecer");
+  if (z.className.indexOf("show") == -1) {
+    z.className += " show";
+  } else { 
+    z.className = z.className.replace(" show", "");
+  }
+}
+
+</script>
+
+</body>
+</html>
