@@ -85,7 +85,7 @@ a.active{background-color:#0095db;color:white}
 
 @media (min-width:507px){.hide-default{display:none!important}}
 
-@media (max-width:466px){
+@media (max-width:507px){
     .dropdown-hover.mobile .dropdown-content,.dropdown-click.mobile .dropdown-content{position:relative}	
     .hide-mobile{display:none!important}.mobile{display:block;width:100%!important}.navbar-item.mobile,.dropdown-hover.mobile,.dropdown-click.mobile{text-align:center}
     .dropdown-hover.mobile,.dropdown-hover.mobile .btn,.dropdown-hover.mobile .button,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button{width:100%}
