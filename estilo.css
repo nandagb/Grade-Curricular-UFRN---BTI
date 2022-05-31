@@ -55,6 +55,7 @@ a.active{background-color:#0095db;color:white}
 
 .left{float:left!important}.right{float:right!important}
 .top,.bottom{position:fixed;width:100%;z-index:10}.top{top:0}.bottom{bottom:0}
+.center {margin: auto;width: 50%;padding: 10px;}
 
 .padding-small{padding:4px 8px!important}.padding{padding:8px 16px!important}.padding-large{padding:12px 24px!important}.padding-square{padding:15px!important}
 
@@ -85,3 +86,18 @@ a.active{background-color:#0095db;color:white}
     .dropdown-hover.mobile,.dropdown-hover.mobile .btn,.dropdown-hover.mobile .button,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button{width:100%}
 }
 
+h1{
+    text-align: center;
+}
+
+#tutorial{
+    width: 90%;
+    border-radius: 10px;
+    
+}
+
+#img_index{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
