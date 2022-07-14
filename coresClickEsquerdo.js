@@ -121,7 +121,10 @@ function sociedade(){
 
 function port2(){
     if(ple2.style.backgroundColor === rgbRosa){
-        ple2.style.backgroundColor = rgbCinza;
+        if(ple1.style.backgroundColor === rgbRosa)
+            ple2.style.backgroundColor = rgbAzul;
+        else ple2.style.backgroundColor = rgbCinza;
+        
     }
     else{
         ple2.style.backgroundColor = rgbRosa;
@@ -130,7 +133,9 @@ function port2(){
 
 function tecProg(){
     if(itp.style.backgroundColor === rgbRosa){
-        itp.style.backgroundColor = rgbCinza;
+        if(pc.style.backgroundColor === rgbRosa)
+            itp.style.backgroundColor = rgbAzul;
+        else itp.style.backgroundColor = rgbCinza;
         arq.style.backgroundColor = rgbCinza;
         edb1.style.backgroundColor = rgbCinza;
         lp1.style.backgroundColor = rgbCinza;
@@ -146,7 +151,9 @@ function tecProg(){
 
 function cal(){
     if(c1.style.backgroundColor === rgbRosa){
-        c1.style.backgroundColor = rgbCinza;
+        if(me.style.backgroundColor === rgbRosa)
+            c1.style.backgroundColor = rgbAzul;
+        else c1.style.backgroundColor = rgbCinza;
         prob.style.backgroundColor = rgbCinza;
     }
     else{
@@ -158,7 +165,9 @@ function cal(){
 
 function funMat1(){
     if(fmc1.style.backgroundColor === rgbRosa){
-        fmc1.style.backgroundColor = rgbCinza;
+        if(me.style.backgroundColor === rgbRosa && ac.style.backgroundColor === rgbRosa && ge.style.backgroundColor === rgbRosa)
+            fmc1.style.backgroundColor = rgbAzul;
+        else fmc1.style.backgroundColor = rgbCinza;
         fmc2.style.backgroundColor = rgbCinza;
     }
     else{
@@ -169,7 +178,9 @@ function funMat1(){
 
 function vetGeo(){
     if(vga.style.backgroundColor === rgbRosa){
-        vga.style.backgroundColor = rgbCinza;
+        if(me.style.backgroundColor === rgbRosa)
+            vga.style.backgroundColor = rgbAzul;
+        else vga.style.backgroundColor = rgbCinza;
     }
     else{
         vga.style.backgroundColor = rgbRosa;
@@ -178,7 +189,9 @@ function vetGeo(){
 
 function arqComp(){
     if(arq.style.backgroundColor === rgbRosa){
-        arq.style.backgroundColor = rgbCinza;
+        if(itp.style.backgroundColor === rgbRosa)
+            arq.style.backgroundColor = rgbAzul;
+        else arq.style.backgroundColor = rgbCinza;
         so.style.backgroundColor = rgbCinza;
         redes.style.backgroundColor = rgbCinza;
     }
@@ -191,7 +204,9 @@ function arqComp(){
 
 function estDados1(){
     if(edb1.style.backgroundColor === rgbRosa){
-        edb1.style.backgroundColor = rgbCinza;
+        if(itp.style.backgroundColor === rgbRosa)
+            edb1.style.backgroundColor = rgbAzul;
+        else edb1.style.backgroundColor = rgbCinza;
         edb2.style.backgroundColor = rgbCinza;
     }
     else{
@@ -202,7 +217,9 @@ function estDados1(){
 
 function linProg1(){
     if(lp1.style.backgroundColor === rgbRosa){
-        lp1.style.backgroundColor = rgbCinza;
+        if(itp.style.backgroundColor === rgbRosa)
+            lp1.style.backgroundColor = rgbAzul;
+        else lp1.style.backgroundColor = rgbCinza;
         lp2.style.backgroundColor = rgbCinza;
     }
     else{
@@ -213,7 +230,9 @@ function linProg1(){
 
 function funMat2(){
     if(fmc2.style.backgroundColor === rgbRosa){
-        fmc2.style.backgroundColor = rgbCinza;
+        if(fmc1.style.backgroundColor === rgbRosa)
+            fmc2.style.backgroundColor = rgbAzul;
+        else fmc2.style.backgroundColor = rgbCinza;
     }
     else{
         fmc2.style.backgroundColor = rgbRosa;
@@ -222,7 +241,9 @@ function funMat2(){
 
 function pro(){
     if(prob.style.backgroundColor === rgbRosa){
-        prob.style.backgroundColor = rgbCinza;
+        if(ac.style.backgroundColor === rgbRosa && c1.style.backgroundColor === rgbRosa)
+            prob.style.backgroundColor = rgbAzul;
+        else prob.style.backgroundColor = rgbCinza;
     }
     else{
         prob.style.backgroundColor = rgbRosa;
@@ -231,7 +252,9 @@ function pro(){
 
 function sisOp(){
     if(so.style.backgroundColor === rgbRosa){
-        so.style.backgroundColor = rgbCinza;
+        if(arq.style.backgroundColor === rgbRosa)
+            so.style.backgroundColor = rgbAzul;
+        else so.style.backgroundColor = rgbCinza;
     }
     else{
         so.style.backgroundColor = rgbRosa;
@@ -240,7 +263,9 @@ function sisOp(){
 
 function estDados2(){
     if(edb2.style.backgroundColor === rgbRosa){
-        edb2.style.backgroundColor = rgbCinza;
+        if(edb1.style.backgroundColor === rgbRosa)
+            edb2.style.backgroundColor = rgbAzul;
+        else edb2.style.backgroundColor = rgbCinza;
     }
     else{
         edb2.style.backgroundColor = rgbRosa;
@@ -249,7 +274,9 @@ function estDados2(){
 
 function linProg2(){
     if(lp2.style.backgroundColor === rgbRosa){
-        lp2.style.backgroundColor = rgbCinza;
+        if(lp1.style.backgroundColor === rgbRosa)
+            lp2.style.backgroundColor = rgbAzul;
+        else lp2.style.backgroundColor = rgbCinza;
         bd.style.backgroundColor = rgbCinza;
     }
     else{
@@ -260,7 +287,9 @@ function linProg2(){
 
 function redesComp(){
     if(redes.style.backgroundColor === rgbRosa){
-        redes.style.backgroundColor = rgbCinza;
+        if(arq.style.backgroundColor === rgbRosa)
+            redes.style.backgroundColor = rgbAzul;
+        else redes.style.backgroundColor = rgbCinza;
     }
     else{
         redes.style.backgroundColor = rgbRosa;
@@ -269,13 +298,18 @@ function redesComp(){
 
 function bancoDados(){
     if(bd.style.backgroundColor === rgbRosa){
-        bd.style.backgroundColor = rgbCinza;
+        if(lp2.style.backgroundColor === rgbRosa)
+            bd.style.backgroundColor = rgbAzul;
+        else bd.style.backgroundColor = rgbCinza;
     }
     else{
         bd.style.backgroundColor = rgbRosa;
     }
 }
 
+
+//antes de voltar para o cinza, checar se as materias prerequisitos estão selecionadas
+//se sim então voltar para o azul em vez do cinza
 function addEventos(){
 
     //1 semestre
