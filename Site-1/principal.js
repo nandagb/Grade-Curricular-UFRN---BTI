@@ -1,12 +1,22 @@
 function matele1 (){
-    var obj = document.getElementById("FMCI");
-    obj.style.backgroundColor = "#6495ED";
-    var obj = document.getElementById("VGA");
-    obj.style.backgroundColor = "#6495ED";
-    var obj = document.getElementById("CAL");
-    obj.style.backgroundColor = "#6495ED";
+    //console.log('entrei aqui')
+    var fmc1 = document.getElementById("FMCI");
+    //var vga = document.getElementById("VGA");
+    //var cal = document.getElementById("CAL");
+
+    //console.log(fmc1.style.backgroundColor);
+
+    if(fmc1.style.backgroundColor === "rgb(100, 149, 237)") {
+        fmc1.style.backgroundColor = "#EEE";
+    }else {
+        fmc1.style.backgroundColor = "#6495ED"
+    }
+
+    // obj.style.backgroundColor = "#6495ED";
+    // obj.style.backgroundColor = "#6495ED";
 
 }
+/*
 function matele2 (){
     var obj = document.getElementById("FMCI");
     obj.style.backgroundColor = "#EEE";
@@ -52,21 +62,21 @@ function ac2(){
     var obj = document.getElementById("PROB");
     obj.style.backgroundColor = "#EEE";
 }
-
+*/
 function addEventos(){
     var obj = document.getElementById("ME");
-    obj.addEventListener("mouseover",matele1);
-    obj.addEventListener("mouseout",matele2);
-    var obj = document.getElementById("PLEI");
-    obj.addEventListener("mouseover",ple1);
-    obj.addEventListener("mouseout",ple2);
-    var obj = document.getElementById("PC");
-    obj.addEventListener("mouseover",pc1);
-    obj.addEventListener("mouseout",pc2);
-    var obj = document.getElementById("GE");
-    obj.addEventListener("mouseover",ge1);
-    obj.addEventListener("mouseout",ge2);
-    var obj = document.getElementById("AC");
-    obj.addEventListener("mouseover",ac1);
-    obj.addEventListener("mouseout",ac2);
+    obj.addEventListener("click", matele1);
+    // obj.addEventListener("click",matele2);
+    // var obj = document.getElementById("PLEI");
+    // obj.addEventListener("mouseover",ple1);
+    // obj.addEventListener("mouseout",ple2);
+    // var obj = document.getElementById("PC");
+    // obj.addEventListener("mouseover",pc1);
+    // obj.addEventListener("mouseout",pc2);
+    // var obj = document.getElementById("GE");
+    // obj.addEventListener("mouseover",ge1);
+    // obj.addEventListener("mouseout",ge2);
+    // var obj = document.getElementById("AC");
+    // obj.addEventListener("mouseover",ac1);
+    // obj.addEventListener("mouseout",ac2);
 }
