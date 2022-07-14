@@ -258,6 +258,24 @@ function linProg2(){
     }
 }
 
+function redesComp(){
+    if(redes.style.backgroundColor === rgbRosa){
+        redes.style.backgroundColor = rgbCinza;
+    }
+    else{
+        redes.style.backgroundColor = rgbRosa;
+    }
+}
+
+function bancoDados(){
+    if(bd.style.backgroundColor === rgbRosa){
+        bd.style.backgroundColor = rgbCinza;
+    }
+    else{
+        bd.style.backgroundColor = rgbRosa;
+    }
+}
+
 function addEventos(){
 
     //1 semestre
@@ -287,6 +305,12 @@ function addEventos(){
     so.addEventListener("click", sisOp);
     edb2.addEventListener("click", estDados2);
     lp2.addEventListener("click", linProg2);
+
+    //5 semestre
+    redes.addEventListener("click", redesComp);
+
+    //6 semestre
+    bd.addEventListener("click", bancoDados);
     
 
     
