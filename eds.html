@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body onload="addEventos()">
 
 <div>
 <!-- Barra de navegação default -->
@@ -53,49 +53,49 @@
 
 		<div id ="ME" class="grid-item grid-item-2">Matemática Elementar</div>
 		<div id ="FMCI" class="grid-item grid-item-3">Fundamentos Matemáticos da Computação I</div>
-		<div class="grid-item grid-item-4">Fundamentos Matemáticos da Computação II</div>
-		<div class="grid-item grid-item-5">Estruturas de Dados Básicas II</div>
-		<div class="grid-item grid-item-6">Redes de Computadores</div>
-		<div class="grid-item grid-item-7">Banco de Dados</div>
-		<div id = "7-empty1" class="grid-item grid-item-8">Programação Distribuída</div>
+		<div id="FMCII" class="grid-item grid-item-4">Fundamentos Matemáticos da Computação II</div>
+		<div id="EDBII" class="grid-item grid-item-5">Estruturas de Dados Básicas II</div>
+		<div id="REDES" class="grid-item grid-item-6">Redes de Computadores</div>
+		<div id="BD" class="grid-item grid-item-7">Banco de Dados</div>
+		<div id = "PD" class="grid-item grid-item-8">Programação Distribuída</div>
 		 
 		<div id ="GE" class="grid-item grid-item-2">Geometria Euclidiana</div>
 		<div id = "ITP" class="grid-item grid-item-3">Introdução a Tecnicas de Programação</div>
-		<div class="grid-item grid-item-4">Estruturas de Dados Básicas I</div>
-		<div class="grid-item grid-item-5">Linguagem de Programação II</div>
-		<div id="5-empty1" class="grid-item grid-item-6">Desenvolvimento de Sistemas Web I</div>
-		<div id="6-empty1" class="grid-item grid-item-7">Programação Concorrente</div>
-		<div id="7-empty2" class="grid-item grid-item-8">Engenharia de Linguagens</div>
+		<div id="EDBI" class="grid-item grid-item-4">Estruturas de Dados Básicas I</div>
+		<div id="LPII" class="grid-item grid-item-5">Linguagem de Programação II</div>
+		<div id="WEBI" class="grid-item grid-item-6">Desenvolvimento de Sistemas Web I</div>
+		<div id="PROGC" class="grid-item grid-item-7">Programação Concorrente</div>
+		<div id="EL" class="grid-item grid-item-8">Engenharia de Linguagens</div>
 
 		<div id = "PC" class="grid-item grid-item-2">Pensamento Computacional</div>
 		<div id = "CAL" class="grid-item grid-item-3">Matemática para Engenharia I</div>
-		<div class="grid-item grid-item-4">Linguagem de Programação I</div>
-		<div class="grid-item grid-item-5">Sistemas Operacionais</div>
-		<div id="5-empty2" class="grid-item grid-item-6">Grafos</div>
-		<div id="6-empty2" class="grid-item grid-item-7">Desenvolvimento de Sistemas Web II</div>
-		<div id="7-empty3" class="grid-item grid-item-8">Métodos Formais de Engenharia de Software</div>
+		<div id="LPI" class="grid-item grid-item-4">Linguagem de Programação I</div>
+		<div id="SO" class="grid-item grid-item-5">Sistemas Operacionais</div>
+		<div id="GRAF" class="grid-item grid-item-6">Grafos</div>
+		<div id="WEBII" class="grid-item grid-item-7">Desenvolvimento de Sistemas Web II</div>
+		<div id="MFES" class="grid-item grid-item-8">Métodos Formais de Engenharia de Software</div>
 
 		<div id="AC" class="grid-item grid-item-2">Análise Combinatória</div>
 		<div id = "VGA" class="grid-item grid-item-3">Vetores e Geometria Analítica</div>
-		<div class="grid-item grid-item-4">Arquitetura de Computadores</div>
-		<div id="4-empty1" class="grid-item grid-item-5">Boas Práticas de Programação</div>
-		<div id="5-empty3" class="grid-item grid-item-6">Banco de Dados (xh)</div>
-		<div id="6-empty3" class="grid-item grid-item-7">Lógica Aplicada à Engenharia de Software</div>
-		<div id="7-empty4" class="grid-item grid-item-8">Engenharia de Requisitos</div>
+		<div id="ARQ" class="grid-item grid-item-4">Arquitetura de Computadores</div>
+		<div id="BPP" class="grid-item grid-item-5">Boas Práticas de Programação</div>
+		<div id="BD" class="grid-item grid-item-6">Banco de Dados (xh)</div>
+		<div id="LAES" class="grid-item grid-item-7">Lógica Aplicada à Engenharia de Software</div>
+		<div id="ES" class="grid-item grid-item-8">Engenharia de Requisitos</div>
 
-		<div class="grid-item grid-item-2">Tecnologia da Informação e Sociedade</div>
+		<div id="TIS" class="grid-item grid-item-2">Tecnologia da Informação e Sociedade</div>
 		<div id = "PLEII" class="grid-item grid-item-3">Práticas de Leitura e Escrita em Português II</div>
 		<div id="PROB" class="grid-item grid-item-4">Probabilidade</div>
-		<div id="4-empty2" class="grid-item grid-item-5">Análise e Projeto Orientado a Objetos</div>
-		<div id="5-empty4" class="grid-item grid-item-6">Projeto Detalhado de Software</div>
+		<div id="APOO" class="grid-item grid-item-5">Análise e Projeto Orientado a Objetos</div>
+		<div id="PDS" class="grid-item grid-item-6">Projeto Detalhado de Software</div>
 		<div id="6-empty4" class="grid-item grid-item-7">Componente Curricular Optativo (xh)</div>
 		<div class="grid-item grid-item-8">Componente Curricular Optativo (xh)</div>
 
-		<div class="grid-item grid-item-2">Práticas de Leitura em Inglês</div>
+		<div id="PLI" class="grid-item grid-item-2">Práticas de Leitura em Inglês</div>
 		<div class="grid-item grid-item-9"></div>
 		<div class="grid-item grid-item-9"></div>
-		<div id="4-empty3" class="grid-item grid-item-5">Projeto de Interface de Usuário</div>
-		<div id="5-empty5" class="grid-item grid-item-6">Teste de Software</div>
+		<div id="PIU" class="grid-item grid-item-5">Projeto de Interface de Usuário</div>
+		<div id="TS" class="grid-item grid-item-6">Teste de Software</div>
 		<div class="grid-item grid-item-9"></div>
 		<div class="grid-item grid-item-9"></div>
 
@@ -136,6 +136,8 @@ function showMenu() {
 }
 
 </script>
+
+<script src="coresClickEsquerdo.js"></script>
 
 </body>
 </html>
