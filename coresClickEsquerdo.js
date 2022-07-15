@@ -224,16 +224,20 @@ function linProg1(){
             lp1.style.backgroundColor = rgbAzul;
         else lp1.style.backgroundColor = rgbCinza;
         lp2.style.backgroundColor = rgbCinza;
-        bpp.style.backgroundColor = rgbCinza;
-        apoo.style.backgroundColor = rgbCinza;
-        piu.style.backgroundColor = rgbCinza;
+        if(bpp != null){    
+            bpp.style.backgroundColor = rgbCinza;
+            apoo.style.backgroundColor = rgbCinza;
+            piu.style.backgroundColor = rgbCinza;
+        }
     }
     else{
         lp1.style.backgroundColor = rgbRosa;
         lp2.style.backgroundColor = rgbAzul;
-        bpp.style.backgroundColor = rgbAzul;
-        apoo.style.backgroundColor = rgbAzul;
-        piu.style.backgroundColor = rgbAzul;
+        if(bpp != null){
+            bpp.style.backgroundColor = rgbAzul;
+            apoo.style.backgroundColor = rgbAzul;
+            piu.style.backgroundColor = rgbAzul;
+        }
     }
 }
 
