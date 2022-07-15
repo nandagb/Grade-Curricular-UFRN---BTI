@@ -29,6 +29,9 @@ var prob = document.getElementById("PROB");
 var so = document.getElementById("SO");
 var redes = document.getElementById("REDES");
 var bd = document.getElementById("BD");
+var bpp = document.getElementById("BPP");
+var apoo = document.getElementById("APOO");
+var piu = document.getElementById("PIU");
 
 function matEle(){
     
@@ -221,10 +224,16 @@ function linProg1(){
             lp1.style.backgroundColor = rgbAzul;
         else lp1.style.backgroundColor = rgbCinza;
         lp2.style.backgroundColor = rgbCinza;
+        bpp.style.backgroundColor = rgbCinza;
+        apoo.style.backgroundColor = rgbCinza;
+        piu.style.backgroundColor = rgbCinza;
     }
     else{
         lp1.style.backgroundColor = rgbRosa;
         lp2.style.backgroundColor = rgbAzul;
+        bpp.style.backgroundColor = rgbAzul;
+        apoo.style.backgroundColor = rgbAzul;
+        piu.style.backgroundColor = rgbAzul;
     }
 }
 
@@ -311,7 +320,7 @@ function bancoDados(){
 //antes de voltar para o cinza, checar se as materias prerequisitos estão selecionadas
 //se sim então voltar para o azul em vez do cinza
 function addEventos(){
-
+    // ========= Grade geral do BTI =========
     //1 semestre
     me.addEventListener("click", matEle);
     ac.addEventListener("click", analiseComb);
@@ -346,6 +355,7 @@ function addEventos(){
     //6 semestre
     bd.addEventListener("click", bancoDados);
     
+    // ============= Grade de EDS =============
 
     
 
