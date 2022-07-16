@@ -46,6 +46,7 @@ var laes = document.getElementById("LAES");
 var pd = document.getElementById("PD");
 var el = document.getElementById("EL");
 var mfes = document.getElementById("MFES");
+var er = document.getElementById("ER");
 
 function matEle(){
     
@@ -350,11 +351,11 @@ function redesComp(){
         if(arq.style.backgroundColor === rgbRosa)
             redes.style.backgroundColor = rgbAzul;
         else redes.style.backgroundColor = rgbCinza;
-        //if(pd != null) pd.style.backgroundColor = rgbCinza;
+        if(pd != null) pd.style.backgroundColor = rgbCinza;
     }
     else{
         redes.style.backgroundColor = rgbRosa;
-        //if(pd != null && lp2.style.backgroundColor = rgbRosa) pd.style.backgroundColor = rgbCinza;
+        if(pd != null && lp2.style.backgroundColor === rgbRosa) pd.style.backgroundColor = rgbAzul;
     }
 }
 
@@ -407,13 +408,148 @@ function optativo4(){
 
 function sistWeb1(){
     if(web1.style.backgroundColor === rgbRosa){
-        web1.style.backgroundColor = rgbCinza;
+        if(lp1.style.backgroundColor === rgbRosa) web1.style.backgroundColor = rgbAzul;
+        else web1.style.backgroundColor = rgbCinza;
         web2.style.backgroundColor = rgbCinza;
     }
     else{
         if(lp2.style.backgroundColor === rgbRosa)
             web2.style.backgroundColor = rgbAzul;
         web1.style.backgroundColor = rgbRosa;
+    }
+}
+
+function logAp(){
+    if(laes.style.backgroundColor === rgbRosa){
+        if(fmc2.style.backgroundColor === rgbRosa) laes.style.backgroundColor = rgbAzul;
+        else laes.style.backgroundColor = rgbCinza;
+        mfes.style.backgroundColor = rgbCinza;
+    }
+    else{
+        mfes.style.backgroundColor = rgbAzul;
+        laes.style.backgroundColor = rgbRosa;
+    }
+}
+
+function analiseP(){
+    if(apoo.style.backgroundColor === rgbRosa){
+        if(lp1.style.backgroundColor === rgbRosa) apoo.style.backgroundColor = rgbAzul;
+        else apoo.style.backgroundColor = rgbCinza;
+        er.style.backgroundColor = rgbCinza;
+    }
+    else{
+        er.style.backgroundColor = rgbAzul;
+        apoo.style.backgroundColor = rgbRosa;
+    }
+}
+
+function boasPrat(){
+    if(bpp.style.backgroundColor === rgbRosa){
+        if(lp1.style.backgroundColor === rgbRosa) bpp.style.backgroundColor = rgbAzul;
+        else bpp.style.backgroundColor = rgbCinza;
+    }
+    else{
+        bpp.style.backgroundColor = rgbRosa;
+    }
+}
+
+function projInt(){
+    if(piu.style.backgroundColor === rgbRosa){
+        if(lp1.style.backgroundColor === rgbRosa) piu.style.backgroundColor = rgbAzul;
+        else piu.style.backgroundColor = rgbCinza;
+    }
+    else{
+        piu.style.backgroundColor = rgbRosa;
+    }
+}
+
+function grafos(){
+    if(graf.style.backgroundColor === rgbRosa){
+        if(edb2.style.backgroundColor === rgbRosa) graf.style.backgroundColor = rgbAzul;
+        else graf.style.backgroundColor = rgbCinza;
+    }
+    else{
+        graf.style.backgroundColor = rgbRosa;
+    }
+}
+
+function projDet(){
+    if(pds.style.backgroundColor === rgbRosa){
+        if(lp2.style.backgroundColor === rgbRosa) pds.style.backgroundColor = rgbAzul;
+        else pds.style.backgroundColor = rgbCinza;
+    }
+    else{
+        pds.style.backgroundColor = rgbRosa;
+    }
+}
+
+function testes(){
+    if(ts.style.backgroundColor === rgbRosa){
+        if(lp2.style.backgroundColor === rgbRosa) ts.style.backgroundColor = rgbAzul;
+        else ts.style.backgroundColor = rgbCinza;
+    }
+    else{
+        ts.style.backgroundColor = rgbRosa;
+    }
+}
+
+function progConc(){
+    if(progc.style.backgroundColor === rgbRosa){
+        if(so.style.backgroundColor === rgbRosa && lp2.style.backgroundColor === rgbRosa) progc.style.backgroundColor = rgbAzul;
+        else progc.style.backgroundColor = rgbCinza;
+    }
+    else{
+        progc.style.backgroundColor = rgbRosa;
+    }
+}
+
+function sistWeb2(){
+    if(web2.style.backgroundColor === rgbRosa){
+        if(web1.style.backgroundColor === rgbRosa && lp2.style.backgroundColor === rgbRosa) web2.style.backgroundColor = rgbAzul;
+        else web2.style.backgroundColor = rgbCinza;
+    }
+    else{
+        web2.style.backgroundColor = rgbRosa;
+    }
+}
+
+function progDist(){
+    if(pd.style.backgroundColor === rgbRosa){
+        if(redes.style.backgroundColor === rgbRosa && lp2.style.backgroundColor === rgbRosa) pd.style.backgroundColor = rgbAzul;
+        else pd.style.backgroundColor = rgbCinza;
+    }
+    else{
+        pd.style.backgroundColor = rgbRosa;
+    }
+}
+
+function engLing(){
+    if(el.style.backgroundColor === rgbRosa){
+        if(edb2.style.backgroundColor === rgbRosa && lp2.style.backgroundColor === rgbRosa) el.style.backgroundColor = rgbAzul;
+        else el.style.backgroundColor = rgbCinza;
+    }
+    else{
+        el.style.backgroundColor = rgbRosa;
+    }
+}
+
+function metForm(){
+    if(mfes.style.backgroundColor === rgbRosa){
+        if(laes.style.backgroundColor === rgbRosa) mfes.style.backgroundColor = rgbAzul;
+        else mfes.style.backgroundColor = rgbCinza;
+    }
+    else{
+        mfes.style.backgroundColor = rgbRosa;
+    }
+}
+
+function engReq(){
+    if(er.style.backgroundColor === rgbRosa){
+        if(apoo.style.backgroundColor === rgbRosa) er.style.backgroundColor = rgbAzul;
+        else er.style.backgroundColor = rgbCinza;
+    }
+    else{
+        er.style.backgroundColor = rgbRosa;
     }
 }
 
@@ -462,11 +598,37 @@ function addEventos(){
     op3.addEventListener("click", optativo3);
     op4.addEventListener("click", optativo4);
 
-    
+    // =========== Grade de EDS e ECC =========
+    if(progc != null) progc.addEventListener("click", progConc);
+
     // ============= Grade de EDS =============
+    //para evitar erro nas outras paginas
+    if(web1 != null){
+        //4 semestre
+        apoo.addEventListener("click", analiseP);
+        bpp.addEventListener("click", boasPrat);
+        piu.addEventListener("click", projInt);
+        
+        //5 semestre
+        graf.addEventListener("click", grafos);
+        pds.addEventListener("click", projDet);
+        ts.addEventListener("click", testes);
+        web1.addEventListener("click", sistWeb1);
+        
+        //6 semestre
+        web2.addEventListener("click", sistWeb2);
+        laes.addEventListener("click", logAp);
+
+        //7 semestre
+        pd.addEventListener("click", progDist);
+        el.addEventListener("click", engLing);
+        mfes.addEventListener("click", metForm);
+        er.addEventListener("click", engReq);
+        
+    }
     
-    //6 semestre
-    web1.addEventListener("click", sistWeb1);
+    
+    
     
 
 }
