@@ -1,0 +1,108 @@
+body {
+    position:relative;
+    float:left;
+    /*background-color: #eff3f5; */
+	background-color: #cfd8e0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin:0;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+
+a.active{background-color:#0095db;color:white}
+
+.navbar{
+    width:100%;
+    top: 0;
+    left: 0;
+    overflow:hidden;
+    background-color:blue;
+    display:inline-block;
+	position:fixed;
+	z-index:10
+}
+
+.navbar .navbar-item{
+    padding: 14px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+	z-index:10
+}
+
+.navbar .button{white-space: normal;}
+
+.navbar-block .navbar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0;z-index:10}
+.navbar-block.center .navbar-item{text-align:center;}.block{display:block;width:100%}
+
+.button:hover:not(.active){color:#000!important;background-color:#d9e2eb!important}
+
+.btn,.button{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+}
+
+.white,.hover-white:hover{color:#000!important;background-color:#fff!important}
+
+.left{float:left!important}.right{float:right!important}
+.top,.bottom{position:fixed;width:100%;z-index:10}.top{top:0}.bottom{bottom:0}
+.center-div {margin: auto;width: 50%;padding: 10px;}
+
+.padding-small{padding:4px 8px!important}.padding{padding:8px 16px!important}.padding-large{padding:12px 24px!important}.padding-square{padding:15px!important}
+
+.scale-down {object-fit:scale-down}
+
+.hide{display:none!important}.show-block,.show{display:block!important}.show-inline-block{display:inline-block!important}
+
+.menu_bg{
+	background:rgba(0, 0, 0, 0.5);
+	display:block;
+    height:100%;
+    left:0;
+    top:0;
+    bottom:0;
+    width:100%;
+    z-index:5;
+	position:absolute;
+}
+
+#inv_block{
+	height:100px;
+}
+
+@media (min-width:507px){.hide-default{display:none!important}}
+
+@media (max-width:507px){
+    .dropdown-hover.mobile .dropdown-content,.dropdown-click.mobile .dropdown-content{position:relative}	
+    .hide-mobile{display:none!important}.mobile{display:block;width:100%!important}.navbar-item.mobile,.dropdown-hover.mobile,.dropdown-click.mobile{text-align:center}
+    .dropdown-hover.mobile,.dropdown-hover.mobile .btn,.dropdown-hover.mobile .button,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button{width:100%}
+}
+
+h1{
+    text-align: center;
+}
+
+#tutorial{
+    width: 90%;
+    border-radius: 10px;
+    
+}
+
+#img_index{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
