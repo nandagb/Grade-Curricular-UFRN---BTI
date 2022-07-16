@@ -32,6 +32,10 @@ var bd = document.getElementById("BD");
 var bpp = document.getElementById("BPP");
 var apoo = document.getElementById("APOO");
 var piu = document.getElementById("PIU");
+var op1 = document.getElementById("optativo1");
+var op2 = document.getElementById("optativo2");
+var op3 = document.getElementById("optativo3");
+var op4 = document.getElementById("optativo4");
 /*var pds = document.getElementById("PDS");
 var ts = document.getElementById("TS");
 var graf = document.getElementById("GRAF");
@@ -360,6 +364,42 @@ function bancoDados(){
     }
 }
 
+function optativo1(){
+    if(op1.style.backgroundColor === rgbRosa){
+        op1.style.backgroundColor = rgbCinza;
+    }
+    else{
+        op1.style.backgroundColor = rgbRosa;
+    }
+}
+
+function optativo2(){
+    if(op2.style.backgroundColor === rgbRosa){
+        op2.style.backgroundColor = rgbCinza;
+    }
+    else{
+        op2.style.backgroundColor = rgbRosa;
+    }
+}
+
+function optativo3(){
+    if(op3.style.backgroundColor === rgbRosa){
+        op3.style.backgroundColor = rgbCinza;
+    }
+    else{
+        op3.style.backgroundColor = rgbRosa;
+    }
+}
+
+function optativo4(){
+    if(op4.style.backgroundColor === rgbRosa){
+        op4.style.backgroundColor = rgbCinza;
+    }
+    else{
+        op4.style.backgroundColor = rgbRosa;
+    }
+}
+
 
 //antes de voltar para o cinza, checar se as materias prerequisitos estão selecionadas
 //se sim então voltar para o azul em vez do cinza
@@ -398,9 +438,16 @@ function addEventos(){
 
     //6 semestre
     bd.addEventListener("click", bancoDados);
+
+    //optativas
+    op1.addEventListener("click", optativo1);
+    op2.addEventListener("click", optativo2);
+    op3.addEventListener("click", optativo3);
+    op4.addEventListener("click", optativo4);
+
     
     // ============= Grade de EDS =============
 
-    
+
 
 }
