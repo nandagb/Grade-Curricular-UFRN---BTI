@@ -36,7 +36,7 @@ var op1 = document.getElementById("optativo1");
 var op2 = document.getElementById("optativo2");
 var op3 = document.getElementById("optativo3");
 var op4 = document.getElementById("optativo4");
-/*var pds = document.getElementById("PDS");
+var pds = document.getElementById("PDS");
 var ts = document.getElementById("TS");
 var graf = document.getElementById("GRAF");
 var web1 = document.getElementById("WEBI");
@@ -46,7 +46,7 @@ var laes = document.getElementById("LAES");
 var pd = document.getElementById("PD");
 var el = document.getElementById("EL");
 var mfes = document.getElementById("MFES");
-*/
+
 function matEle(){
     
     //quando o elemento está clicado
@@ -242,7 +242,7 @@ function linProg1(){
             bpp.style.backgroundColor = rgbCinza;
             apoo.style.backgroundColor = rgbCinza;
             piu.style.backgroundColor = rgbCinza;
-            //web1.style.backgroundColor = rgbCinza;
+            web1.style.backgroundColor = rgbCinza;
         }
     }
     else{
@@ -252,7 +252,7 @@ function linProg1(){
             bpp.style.backgroundColor = rgbAzul;
             apoo.style.backgroundColor = rgbAzul;
             piu.style.backgroundColor = rgbAzul;
-            //web1.style.backgroundColor = rgbCinza;
+            web1.style.backgroundColor = rgbAzul;
         }
     }
 }
@@ -262,11 +262,11 @@ function funMat2(){
         if(fmc1.style.backgroundColor === rgbRosa)
             fmc2.style.backgroundColor = rgbAzul;
         else fmc2.style.backgroundColor = rgbCinza;
-        //if(laes != null) laes.style.backgroundColor = rgbCinza;
+        if(laes != null) laes.style.backgroundColor = rgbCinza;
     }
     else{
         fmc2.style.backgroundColor = rgbRosa;
-        //if(laes != null) laes.style.backgroundColor = rgbAzul;
+        if(laes != null) laes.style.backgroundColor = rgbAzul;
     }
 }
 
@@ -286,11 +286,11 @@ function sisOp(){
         if(arq.style.backgroundColor === rgbRosa)
             so.style.backgroundColor = rgbAzul;
         else so.style.backgroundColor = rgbCinza;
-        //if(progc != null) progc.style.backgroundColor = rgbCinza;
+        if(progc != null) progc.style.backgroundColor = rgbCinza;
     }
     else{
         so.style.backgroundColor = rgbRosa;
-        //if(progc != null) progc.style.backgroundColor = rgbRosa;
+        if(progc != null) progc.style.backgroundColor = rgbAzul;
     }
 }
 
@@ -299,19 +299,19 @@ function estDados2(){
         if(edb1.style.backgroundColor === rgbRosa)
             edb2.style.backgroundColor = rgbAzul;
         else edb2.style.backgroundColor = rgbCinza;
-        /*if(graf != null) graf.style.backgroundColor = rgbCinza;
+        if(graf != null) graf.style.backgroundColor = rgbCinza;
         if(web2 != null){
             web2.style.backgroundColor = rgbCinza;
             el.style.backgroundColor = rgbCinza;
-        }*/
+        }
     }
     else{
         edb2.style.backgroundColor = rgbRosa;
-        /*if(graf != null) graf.style.backgroundColor = rgbAzul;
+        if(graf != null) graf.style.backgroundColor = rgbAzul;
         if(web2 != null){
             if(web1.style.backgroundColor === rgbRosa) web2.style.backgroundColor = rgbAzul;
             if(lp2.style.backgroundColor === rgbRosa) el.style.backgroundColor = rgbAzul;
-        }*/
+        }
     }
 }
 
@@ -321,22 +321,25 @@ function linProg2(){
             lp2.style.backgroundColor = rgbAzul;
         else lp2.style.backgroundColor = rgbCinza;
         bd.style.backgroundColor = rgbCinza;
-        /*if(pds != null){
+        if(pds != null){
             pds.style.backgroundColor = rgbCinza;
             ts.style.backgroundColor = rgbCinza;
             pd.style.backgroundColor = rgbCinza;
+            el.style.backgroundColor = rgbCinza;
         }
-        if(progc != null) progc.style.backgroundColor = rgbCinza;*/
+        //ambas as grades
+        if(progc != null) progc.style.backgroundColor = rgbCinza;
     }
     else{
         lp2.style.backgroundColor = rgbRosa;
         bd.style.backgroundColor = rgbAzul;
-        /*if(pds != null){
+        if(pds != null){
             pds.style.backgroundColor = rgbAzul;
             ts.style.backgroundColor = rgbAzul;
-            if(redes.style.backgroundColor = rgbRosa) pd.style.backgroundColor = rgbAzul;
+            if(redes.style.backgroundColor === rgbRosa) pd.style.backgroundColor = rgbAzul;
+            if(edb2.style.backgroundColor === rgbRosa) el.style.backgroundColor = rgbAzul;
         }
-        if(progc != null) progc.style.backgroundColor = rgbCinza;*/
+        if(progc != null) progc.style.backgroundColor = rgbCinza;
     }
 }
 
