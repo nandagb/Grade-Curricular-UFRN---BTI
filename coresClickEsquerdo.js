@@ -290,7 +290,7 @@ function sisOp(){
     }
     else{
         so.style.backgroundColor = rgbRosa;
-        if(progc != null) progc.style.backgroundColor = rgbAzul;
+        if(progc != null && lp2.style.backgroundColor === rgbRosa) progc.style.backgroundColor = rgbAzul;
     }
 }
 
@@ -326,6 +326,7 @@ function linProg2(){
             ts.style.backgroundColor = rgbCinza;
             pd.style.backgroundColor = rgbCinza;
             el.style.backgroundColor = rgbCinza;
+            web1.style.backgroundColor = rgbCinza;
         }
         //ambas as grades
         if(progc != null) progc.style.backgroundColor = rgbCinza;
@@ -338,8 +339,9 @@ function linProg2(){
             ts.style.backgroundColor = rgbAzul;
             if(redes.style.backgroundColor === rgbRosa) pd.style.backgroundColor = rgbAzul;
             if(edb2.style.backgroundColor === rgbRosa) el.style.backgroundColor = rgbAzul;
+            if(web1.style.backgroundColor === rgbRosa) web2.style.backgroundColor = rgbAzul;
         }
-        if(progc != null) progc.style.backgroundColor = rgbCinza;
+        if(progc != null && so.style.backgroundColor === rgbRosa) progc.style.backgroundColor = rgbAzul;
     }
 }
 
