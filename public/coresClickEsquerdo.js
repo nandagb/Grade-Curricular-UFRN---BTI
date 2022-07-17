@@ -47,6 +47,21 @@ var pd = document.getElementById("PD");
 var el = document.getElementById("EL");
 var mfes = document.getElementById("MFES");
 var er = document.getElementById("ER");
+var cl = document.getElementById("CL");
+var c2 = document.getElementById("CALII");
+var alc = document.getElementById("ALC");
+var oc = document.getElementById("OC");
+var fmc3 = document.getElementById("FMCIII");
+var eae1 = document.getElementById("EAEI");
+var cncc = document.getElementById("CNCC");
+var ps = document.getElementById("PS");
+var paa = document.getElementById("PAA");
+var lfa = document.getElementById("LFA");
+var lpcp = document.getElementById("LPCP");
+var lc = document.getElementById("LC");
+
+
+
 
 function matEle(){
     
@@ -89,9 +104,11 @@ function geoEucl(){
     if(ge.style.backgroundColor === rgbRosa) {
         ge.style.backgroundColor = rgbCinza;
         fmc1.style.backgroundColor = rgbCinza;
+        if(alc != null) alc.style.backgroundColor = rgbCinza;
     }else {
         if(ac.style.backgroundColor === rgbRosa && me.style.backgroundColor === rgbRosa)
             fmc1.style.backgroundColor = rgbAzul;
+        if(alc != null) alc.style.backgroundColor = rgbAzul;
         ge.style.backgroundColor = rgbRosa;
     }
 
@@ -119,23 +136,6 @@ function port1(){
     }
 }
 
-function ingles(){
-    if(pli.style.backgroundColor === rgbRosa){
-        pli.style.backgroundColor = rgbCinza;
-    }
-    else{
-        pli.style.backgroundColor = rgbRosa;
-    }
-}
-
-function sociedade(){
-    if(tis.style.backgroundColor === rgbRosa){
-        tis.style.backgroundColor = rgbCinza;
-    }
-    else{
-        tis.style.backgroundColor = rgbRosa;
-    }
-}
 
 function port2(){
     if(ple2.style.backgroundColor === rgbRosa){
@@ -173,11 +173,13 @@ function cal(){
             c1.style.backgroundColor = rgbAzul;
         else c1.style.backgroundColor = rgbCinza;
         prob.style.backgroundColor = rgbCinza;
+        if(c2 != null) c2.style.backgroundColor = rgbCinza;
     }
     else{
-        c1.style.backgroundColor = rgbRosa;
         if(ac.style.backgroundColor === rgbRosa)
             prob.style.backgroundColor = rgbAzul;
+        if(c2 != null) c2.style.backgroundColor = rgbAzul;
+        c1.style.backgroundColor = rgbRosa;
     }
 }
 
@@ -212,11 +214,13 @@ function arqComp(){
         else arq.style.backgroundColor = rgbCinza;
         so.style.backgroundColor = rgbCinza;
         redes.style.backgroundColor = rgbCinza;
+        if(cl != null) cl.style.backgroundColor = rgbCinza;
     }
     else{
-        arq.style.backgroundColor = rgbRosa;
         so.style.backgroundColor = rgbAzul;
         redes.style.backgroundColor = rgbAzul;
+        if(cl != null) cl.style.backgroundColor = rgbAzul; 
+        arq.style.backgroundColor = rgbRosa;
     }
 }
 
@@ -264,10 +268,12 @@ function funMat2(){
             fmc2.style.backgroundColor = rgbAzul;
         else fmc2.style.backgroundColor = rgbCinza;
         if(laes != null) laes.style.backgroundColor = rgbCinza;
+        if(fmc3 != null) fmc3.style.backgroundColor = rgbCinza;
     }
     else{
-        fmc2.style.backgroundColor = rgbRosa;
         if(laes != null) laes.style.backgroundColor = rgbAzul;
+        if(fmc3 != null) fmc3.style.backgroundColor = rgbAzul;
+        fmc2.style.backgroundColor = rgbRosa;
     }
 }
 
@@ -276,8 +282,10 @@ function pro(){
         if(ac.style.backgroundColor === rgbRosa && c1.style.backgroundColor === rgbRosa)
             prob.style.backgroundColor = rgbAzul;
         else prob.style.backgroundColor = rgbCinza;
+        if(eae1 != null) eae1.style.backgroundColor = rgbCinza;
     }
     else{
+        if(eae1 != null) eae1.style.backgroundColor = rgbAzul;
         prob.style.backgroundColor = rgbRosa;
     }
 }
@@ -288,6 +296,10 @@ function sisOp(){
             so.style.backgroundColor = rgbAzul;
         else so.style.backgroundColor = rgbCinza;
         if(progc != null) progc.style.backgroundColor = rgbCinza;
+        if(lc != null){
+            if(lp2.style.backgroundColor === rgbRosa && fmc3.style.backgroundColor === rgbRosa)
+                progc.style.backgroundColor = rgbCinza;
+        }
     }
     else{
         so.style.backgroundColor = rgbRosa;
@@ -322,7 +334,7 @@ function linProg2(){
             lp2.style.backgroundColor = rgbAzul;
         else lp2.style.backgroundColor = rgbCinza;
         bd.style.backgroundColor = rgbCinza;
-        if(pds != null){
+        if(pds != null){//grade ds
             pds.style.backgroundColor = rgbCinza;
             ts.style.backgroundColor = rgbCinza;
             pd.style.backgroundColor = rgbCinza;
@@ -331,6 +343,11 @@ function linProg2(){
         }
         //ambas as grades
         if(progc != null) progc.style.backgroundColor = rgbCinza;
+        if(ps != null){//grade cc
+            ps.style.backgroundColor = rgbCinza; 
+            if(so.style.backgroundColor === rgbRosa && fmc3.style.backgroundColor === rgbRosa)
+                lpcp.style.backgroundColor = rgbCinza;
+        }
     }
     else{
         lp2.style.backgroundColor = rgbRosa;
@@ -359,6 +376,7 @@ function redesComp(){
     }
 }
 
+//todas as grades
 function bancoDados(){
     if(bd.style.backgroundColor === rgbRosa){
         if(lp2.style.backgroundColor === rgbRosa)
@@ -370,188 +388,175 @@ function bancoDados(){
     }
 }
 
-function optativo1(){
-    if(op1.style.backgroundColor === rgbRosa){
-        op1.style.backgroundColor = rgbCinza;
-    }
-    else{
-        op1.style.backgroundColor = rgbRosa;
-    }
-}
-
-function optativo2(){
-    if(op2.style.backgroundColor === rgbRosa){
-        op2.style.backgroundColor = rgbCinza;
-    }
-    else{
-        op2.style.backgroundColor = rgbRosa;
-    }
-}
-
-function optativo3(){
-    if(op3.style.backgroundColor === rgbRosa){
-        op3.style.backgroundColor = rgbCinza;
-    }
-    else{
-        op3.style.backgroundColor = rgbRosa;
-    }
-}
-
-function optativo4(){
-    if(op4.style.backgroundColor === rgbRosa){
-        op4.style.backgroundColor = rgbCinza;
-    }
-    else{
-        op4.style.backgroundColor = rgbRosa;
-    }
-}
-
-function sistWeb1(){
-    if(web1.style.backgroundColor === rgbRosa){
-        if(lp1.style.backgroundColor === rgbRosa) web1.style.backgroundColor = rgbAzul;
-        else web1.style.backgroundColor = rgbCinza;
-        web2.style.backgroundColor = rgbCinza;
-    }
-    else{
-        if(lp2.style.backgroundColor === rgbRosa)
-            web2.style.backgroundColor = rgbAzul;
-        web1.style.backgroundColor = rgbRosa;
-    }
-}
-
-function logAp(){
-    if(laes.style.backgroundColor === rgbRosa){
-        if(fmc2.style.backgroundColor === rgbRosa) laes.style.backgroundColor = rgbAzul;
-        else laes.style.backgroundColor = rgbCinza;
-        mfes.style.backgroundColor = rgbCinza;
-    }
-    else{
-        mfes.style.backgroundColor = rgbAzul;
-        laes.style.backgroundColor = rgbRosa;
-    }
-}
-
-function analiseP(){
-    if(apoo.style.backgroundColor === rgbRosa){
-        if(lp1.style.backgroundColor === rgbRosa) apoo.style.backgroundColor = rgbAzul;
-        else apoo.style.backgroundColor = rgbCinza;
-        er.style.backgroundColor = rgbCinza;
-    }
-    else{
-        er.style.backgroundColor = rgbAzul;
-        apoo.style.backgroundColor = rgbRosa;
-    }
-}
-
-function boasPrat(){
-    if(bpp.style.backgroundColor === rgbRosa){
-        if(lp1.style.backgroundColor === rgbRosa) bpp.style.backgroundColor = rgbAzul;
-        else bpp.style.backgroundColor = rgbCinza;
-    }
-    else{
-        bpp.style.backgroundColor = rgbRosa;
-    }
-}
-
-function projInt(){
-    if(piu.style.backgroundColor === rgbRosa){
-        if(lp1.style.backgroundColor === rgbRosa) piu.style.backgroundColor = rgbAzul;
-        else piu.style.backgroundColor = rgbCinza;
-    }
-    else{
-        piu.style.backgroundColor = rgbRosa;
-    }
-}
-
+//todas as grades
 function grafos(){
     if(graf.style.backgroundColor === rgbRosa){
         if(edb2.style.backgroundColor === rgbRosa) graf.style.backgroundColor = rgbAzul;
         else graf.style.backgroundColor = rgbCinza;
+        if(paa != null) paa.style.backgroundColor = rgbCinza;
     }
     else{
+        if(paa != null) paa.style.backgroundColor = rgbAzul;
         graf.style.backgroundColor = rgbRosa;
     }
 }
 
-function projDet(){
-    if(pds.style.backgroundColor === rgbRosa){
-        if(lp2.style.backgroundColor === rgbRosa) pds.style.backgroundColor = rgbAzul;
-        else pds.style.backgroundColor = rgbCinza;
-    }
-    else{
-        pds.style.backgroundColor = rgbRosa;
+
+
+
+//funcao para materias com tres requisitos que nao libera nenhuma
+function tresReqNenhuma(mat, req1, req2, req3){
+    return function(){
+        if(mat.style.backgroundColor === rgbRosa){
+            if(req1.style === rgbRosa && req2.style === rgbRosa && req3.style === rgbRosa) mat.style.backgroundColor = rgbAzul;
+            else mat.style.backgroundColor = rgbCinza;
+        }
+        else{
+            mat.style.backgroundColor = rgbRosa;
+        } 
     }
 }
 
-function testes(){
-    if(ts.style.backgroundColor === rgbRosa){
-        if(lp2.style.backgroundColor === rgbRosa) ts.style.backgroundColor = rgbAzul;
-        else ts.style.backgroundColor = rgbCinza;
-    }
-    else{
-        ts.style.backgroundColor = rgbRosa;
-    }
-}
-
-function progConc(){
-    if(progc.style.backgroundColor === rgbRosa){
-        if(so.style.backgroundColor === rgbRosa && lp2.style.backgroundColor === rgbRosa) progc.style.backgroundColor = rgbAzul;
-        else progc.style.backgroundColor = rgbCinza;
-    }
-    else{
-        progc.style.backgroundColor = rgbRosa;
-    }
-}
-
-function sistWeb2(){
-    if(web2.style.backgroundColor === rgbRosa){
-        if(web1.style.backgroundColor === rgbRosa && lp2.style.backgroundColor === rgbRosa) web2.style.backgroundColor = rgbAzul;
-        else web2.style.backgroundColor = rgbCinza;
-    }
-    else{
-        web2.style.backgroundColor = rgbRosa;
+//funcao para materias com um requisito que libera tres com uma condicao de dois em uma das materias
+function umReqTresLibCond(mat, req, lib1, lib2, libc, reqlib1, reqlib2){
+    return function(){
+        if(mat.style.backgroundColor === rgbRosa){
+            if(req.style === rgbRosa) mat.style.backgroundColor = rgbAzul;
+            else mat.style.backgroundColor = rgbCinza;
+            lib1.style.backgroundColor = rgbCinza;
+            lib2.style.backgroundColor = rgbCinza;
+            libc.style.backgroundColor = rgbCinza;
+        }
+        else{
+            if(reqlib1.style.backgroundColor === rgbRosa && reqlib2.style.backgroundColor === rgbRosa) libc.style.backgroundColor = rgbAzul;
+            lib1.style.backgroundColor = rgbAzul;
+            lib2.style.backgroundColor = rgbAzul;
+            mat.style.backgroundColor = rgbRosa;
+        } 
     }
 }
 
-function progDist(){
-    if(pd.style.backgroundColor === rgbRosa){
-        if(redes.style.backgroundColor === rgbRosa && lp2.style.backgroundColor === rgbRosa) pd.style.backgroundColor = rgbAzul;
-        else pd.style.backgroundColor = rgbCinza;
-    }
-    else{
-        pd.style.backgroundColor = rgbRosa;
-    }
-}
-
-function engLing(){
-    if(el.style.backgroundColor === rgbRosa){
-        if(edb2.style.backgroundColor === rgbRosa && lp2.style.backgroundColor === rgbRosa) el.style.backgroundColor = rgbAzul;
-        else el.style.backgroundColor = rgbCinza;
-    }
-    else{
-        el.style.backgroundColor = rgbRosa;
+//funcao para materias com um requisito que libera dois com uma condicao de dois em uma e uma condicao de um em outra
+function umReqDoisLibDoisCond(mat, req, libc1, libc2, reqlib1, reqlib2, reqlib22){
+    return function(){
+        if(mat.style.backgroundColor === rgbRosa){
+            if(req.style === rgbRosa) mat.style.backgroundColor = rgbAzul;
+            else mat.style.backgroundColor = rgbCinza;
+            libc1.style.backgroundColor = rgbCinza;
+            libc2.style.backgroundColor = rgbCinza;
+        }
+        else{
+            if(reqlib1.style.backgroundColor === rgbRosa) libc1.style.backgroundColor = rgbAzul;
+            if(reqlib2.style.backgroundColor === rgbRosa && reqlib22.style.backgroundColor === rgbRosa) libc2.style.backgroundColor = rgbAzul;
+            mat.style.backgroundColor = rgbRosa;
+        } 
     }
 }
 
-function metForm(){
-    if(mfes.style.backgroundColor === rgbRosa){
-        if(laes.style.backgroundColor === rgbRosa) mfes.style.backgroundColor = rgbAzul;
-        else mfes.style.backgroundColor = rgbCinza;
+//funcao para materias com um requisito e libera dois com condicao  de dois em uma e uma condicao em outra
+function umReqDoisLibDoisCondDois(mat, req, libc1, libc2, reqlib1, reqlib21, reqlib22){
+    return function(){
+        if(mat.style.backgroundColor === rgbRosa){
+            if(req.style === rgbRosa) mat.style.backgroundColor = rgbAzul;
+            else mat.style.backgroundColor = rgbCinza;
+            libc1.style.backgroundColor = rgbCinza;
+            libc2.style.backgroundColor = rgbCinza;
+        }
+        else{
+            if(reqlib1.style.backgroundColor === rgbRosa) libc1.style.backgroundColor = rgbAzul;
+            if(reqlib21.style.backgroundColor === rgbRosa && reqlib22.style.backgroundColor === rgbRosa) libc2.style.backgroundColor = rgbAzul;
+            mat.style.backgroundColor = rgbRosa;
+        } 
     }
-    else{
-        mfes.style.backgroundColor = rgbRosa;
+
+}
+
+//funcao para materias com um requisito e libera uma com condicao
+function umReqUmaLibCond(mat, req, libc, reqlib){
+    return function(){
+        if(mat.style.backgroundColor === rgbRosa){
+            if(req.style === rgbRosa) mat.style.backgroundColor = rgbAzul;
+            else mat.style.backgroundColor = rgbCinza;
+            libc.style.backgroundColor = rgbCinza;
+        }
+        else{
+            if(reqlib.style.backgroundColor === rgbRosa) libc.style.backgroundColor = rgbAzul;
+            mat.style.backgroundColor = rgbRosa;
+        }
+    } 
+}
+
+//funcao para materias com um requisito e libera duas com condicao em uma
+function umReqDoisLibCond(mat, req, lib, libc, reqlib){
+    return function(){
+        if(mat.style.backgroundColor === rgbRosa){
+            if(req.style === rgbRosa) mat.style.backgroundColor = rgbAzul;
+            else mat.style.backgroundColor = rgbCinza;
+            lib.style.backgroundColor = rgbCinza;
+            libc.style.backgroundColor = rgbCinza;
+        }
+        else{
+            if(reqlib.style.backgroundColor === rgbRosa) libc.style.backgroundColor = rgbAzul;
+            lib.style.backgroundColor = rgbAzul;
+            mat.style.backgroundColor = rgbRosa;
+        }
     }
 }
 
-function engReq(){
-    if(er.style.backgroundColor === rgbRosa){
-        if(apoo.style.backgroundColor === rgbRosa) er.style.backgroundColor = rgbAzul;
-        else er.style.backgroundColor = rgbCinza;
-    }
-    else{
-        er.style.backgroundColor = rgbRosa;
+//funcao para matérias com um requisito e libera mais uma
+function umReqUmaLib(mat, req, lib){
+    return function(){
+        if(mat.style.backgroundColor === rgbRosa){
+            if(req.style.backgroundColor === rgbRosa) mat.style.backgroundColor = rgbAzul;
+            else mat.style.backgroundColor = rgbCinza;
+            lib.style.backgroundColor = rgbCinza;
+        }
+        else{
+            lib.style.backgroundColor = rgbAzul;
+            mat.style.backgroundColor = rgbRosa;
+        }
     }
 }
+
+//funcao para matérias sem requisitos que não liberam nenhuma matéria
+function nenhumaNenhuma(mat){
+    return function(){
+        if(mat.style.backgroundColor === rgbRosa){
+            mat.style.backgroundColor = rgbCinza;
+        }
+        else{
+            mat.style.backgroundColor = rgbRosa;
+        } 
+    }
+}
+
+//funcão para quando a matéria tem 2 requisitos e não desbloqueia nenhuma outra
+function doisReqNenhuma(mat, req1, req2){
+    return function(){
+        if(mat.style.backgroundColor === rgbRosa){
+            if(req1.style.backgroundColor === rgbRosa && req2.style.backgroundColor === rgbRosa) mat.style.backgroundColor = rgbAzul;
+            else mat.style.backgroundColor = rgbCinza;
+        }
+        else{
+            mat.style.backgroundColor = rgbRosa;
+        } 
+    }
+}
+
+
+//funcão para quando a matéria tem 1 prerequisitos e não desbloqueia nenhuma outra
+function umReqNenhuma(mat, req){
+    return function(){
+        if(mat.style.backgroundColor === rgbRosa){
+            if(req.style.backgroundColor === rgbRosa) mat.style.backgroundColor = rgbAzul;
+            else mat.style.backgroundColor = rgbCinza;
+        }
+        else{
+            mat.style.backgroundColor = rgbRosa;
+        } 
+    }
+}
+
 
 
 //antes de voltar para o cinza, checar se as materias prerequisitos estão selecionadas
@@ -564,8 +569,8 @@ function addEventos(){
     ge.addEventListener("click", geoEucl);
     pc.addEventListener("click", penComp);
     ple1.addEventListener("click", port1);
-    pli.addEventListener("click", ingles);
-    tis.addEventListener("click", sociedade);
+    pli.addEventListener("click", nenhumaNenhuma(pli));
+    tis.addEventListener("click", nenhumaNenhuma(tis));
     
     //2 semestre
     ple2.addEventListener("click", port2);
@@ -593,42 +598,70 @@ function addEventos(){
     bd.addEventListener("click", bancoDados);
 
     //optativas
-    op1.addEventListener("click", optativo1);
-    op2.addEventListener("click", optativo2);
-    op3.addEventListener("click", optativo3);
-    op4.addEventListener("click", optativo4);
+    op1.addEventListener("click", nenhumaNenhuma(optativo1));
+    op2.addEventListener("click", nenhumaNenhuma(optativo2));
+    op3.addEventListener("click", nenhumaNenhuma(optativo3));
+    op4.addEventListener("click", nenhumaNenhuma(optativo4));
 
     // =========== Grade de EDS e ECC =========
-    if(progc != null) progc.addEventListener("click", progConc);
+    if(progc != null) progc.addEventListener("click", doisReqNenhuma(progc, so, lp2));
+    if(graf != null) graf.addEventListener("click", grafos);
 
     // ============= Grade de EDS =============
     //para evitar erro nas outras paginas
     if(web1 != null){
         //4 semestre
-        apoo.addEventListener("click", analiseP);
-        bpp.addEventListener("click", boasPrat);
-        piu.addEventListener("click", projInt);
+        apoo.addEventListener("click", umReqUmaLib(apoo, lp1, er));
+        bpp.addEventListener("click", umReqNenhuma(bpp, lp1));
+        piu.addEventListener("click", umReqNenhuma(piu, lp1));
         
         //5 semestre
-        graf.addEventListener("click", grafos);
-        pds.addEventListener("click", projDet);
-        ts.addEventListener("click", testes);
-        web1.addEventListener("click", sistWeb1);
+        pds.addEventListener("click", umReqNenhuma(pds, lp2));
+        ts.addEventListener("click", umReqNenhuma(ts, lp2));
+        web1.addEventListener("click", umReqUmaLib(web1, lp1, web2));
         
         //6 semestre
-        web2.addEventListener("click", sistWeb2);
-        laes.addEventListener("click", logAp);
+        web2.addEventListener("click", doisReqNenhuma(web2, web1, lp2));
+        laes.addEventListener("click", umReqUmaLib(laes, fmc2, mfes));
 
         //7 semestre
-        pd.addEventListener("click", progDist);
-        el.addEventListener("click", engLing);
-        mfes.addEventListener("click", metForm);
-        er.addEventListener("click", engReq);
+        pd.addEventListener("click", doisReqNenhuma(pd, redes, lp2));
+        el.addEventListener("click", doisReqNenhuma(el, edb2, lp2));
+        mfes.addEventListener("click", umReqNenhuma(mfes, laes));
+        er.addEventListener("click", umReqNenhuma(er, apoo));
         
     }
-    
-    
-    
-    
+
+    // ============= Grade de ECC =============
+    //para evitar erro nas outras paginas
+    if(fmc3 != null){
+        //4 semestre 
+        cl.addEventListener("click", umReqUmaLib(cl, arq, oc));
+        c2.addEventListener("click", umReqDoisLibDoisCondDois(c2, c1, cncc, eae1, alc, alc, prob));
+        alc.addEventListener("click", umReqDoisLibDoisCond(alc, ge, cncc, eae1, c2, c2, prob));
+
+        //5 periodo
+        oc.addEventListener("click", umReqNenhuma(oc, cl));
+        fmc3.addEventListener("click", umReqTresLibCond(fmc3, fmc2, lfa, lc, lpcp, lp2, so));
+        //mat, req, lib1, lib2, libc, reqlib1, reqlib2
+        eae1.addEventListener("click", tresReqNenhuma(eae1, c2, alc, prob));
+        cncc.addEventListener("click", doisReqNenhuma(cncc, alc, c2));
+        
+
+        //6 periodo
+        ps.addEventListener("click", umReqNenhuma(ps, lp2));
+        paa.addEventListener("click", umReqNenhuma(paa, graf));
+        lfa.addEventListener("click", umReqNenhuma(lfa, fmc3));
+
+        //7 periodo
+        //progc.addEventListener("click", umReqNenhuma(progc, so));
+        lc.addEventListener("click", umReqNenhuma(lc, fmc3));
+        lpcp.addEventListener("click", tresReqNenhuma(lpcp, so, lp2, fmc3));
+        
+        
+        
+        //5 semestre
+        //eae1.addEventListener("cick", doisReqNenhuma(eae1, c2, prob));
+    }
 
 }
