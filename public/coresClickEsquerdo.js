@@ -285,7 +285,7 @@ function pro(){
         if(eae1 != null) eae1.style.backgroundColor = rgbCinza;
     }
     else{
-        if(eae1 != null) eae1.style.backgroundColor = rgbAzul;
+        if(eae1 != null && c2.style.backgroundColor === rgbRosa) eae1.style.backgroundColor = rgbAzul;
         prob.style.backgroundColor = rgbRosa;
     }
 }
@@ -296,14 +296,12 @@ function sisOp(){
             so.style.backgroundColor = rgbAzul;
         else so.style.backgroundColor = rgbCinza;
         if(progc != null) progc.style.backgroundColor = rgbCinza;
-        if(lc != null){
-            if(lp2.style.backgroundColor === rgbRosa && fmc3.style.backgroundColor === rgbRosa)
-                progc.style.backgroundColor = rgbCinza;
-        }
+        if(lpcp != null ) lpcp.style.backgroundColor = rgbCinza;
     }
     else{
         so.style.backgroundColor = rgbRosa;
-        if(progc != null && lp2.style.backgroundColor === rgbRosa) progc.style.backgroundColor = rgbAzul;
+        if(progc != null && lp2.style.backgroundColor === rgbRosa ) progc.style.backgroundColor = rgbAzul;
+        if(lpcp != null && lp2.style.backgroundColor === rgbRosa && fmc3.style.backgroundColor === rgbRosa) lpcp.style.backgroundColor = rgbAzul;
     }
 }
 
@@ -345,8 +343,7 @@ function linProg2(){
         if(progc != null) progc.style.backgroundColor = rgbCinza;
         if(ps != null){//grade cc
             ps.style.backgroundColor = rgbCinza; 
-            if(so.style.backgroundColor === rgbRosa && fmc3.style.backgroundColor === rgbRosa)
-                lpcp.style.backgroundColor = rgbCinza;
+            lpcp.style.backgroundColor = rgbCinza;
         }
     }
     else{
@@ -360,6 +357,11 @@ function linProg2(){
             if(web1.style.backgroundColor === rgbRosa) web2.style.backgroundColor = rgbAzul;
         }
         if(progc != null && so.style.backgroundColor === rgbRosa) progc.style.backgroundColor = rgbAzul;
+        if(ps != null){//grade cc
+            ps.style.backgroundColor = rgbAzul; 
+            if(so.style.backgroundColor === rgbRosa && fmc3.style.backgroundColor === rgbRosa)
+                lpcp.style.backgroundColor = rgbAzul;
+        }
     }
 }
 
@@ -452,6 +454,7 @@ function umReqDoisLibDoisCond(mat, req, libc1, libc2, reqlib1, reqlib2, reqlib22
         } 
     }
 }
+
 
 //funcao para materias com um requisito e libera dois com condicao  de dois em uma e uma condicao em outra
 function umReqDoisLibDoisCondDois(mat, req, libc1, libc2, reqlib1, reqlib21, reqlib22){
@@ -658,10 +661,6 @@ function addEventos(){
         lc.addEventListener("click", umReqNenhuma(lc, fmc3));
         lpcp.addEventListener("click", tresReqNenhuma(lpcp, so, lp2, fmc3));
         
-        
-        
-        //5 semestre
-        //eae1.addEventListener("cick", doisReqNenhuma(eae1, c2, prob));
     }
 
 }
