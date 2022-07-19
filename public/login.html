@@ -1,47 +1,41 @@
 <!DOCTYÉ html>
 <html>
 <head>
-
-<title>Login</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="estilo.css">
-<link rel="stylesheet" href="estilo-formulario.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="estilo-formulario.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
 
 <div>
-<!-- Barra de navegação default -->
-<div class="navbar white left">
-    <a href="https://www.ufrn.br/" title="Ir para o Portal da UFRN" target="_blank" class="navbar-item logo">
-        <img class=".scale-down" src="https://logodownload.org/wp-content/uploads/2018/04/ufrn-logo.png" alt="Logomarca da UFRN" style="height:18px">
-    </a>
-	<a id="fabars" class="navbar-item button hide-default right padding-square" onclick="showMenu()" title="Abrir Menu de Navegação">
-	<i class="fa fa-bars"></i></a>
-    <a href="index.html" class="navbar-item button hide-mobile">INICIO</a>
-    <a href="bti.html" class="navbar-item button hide-mobile">BTI</a>
-    <a href="ecc.html" class="navbar-item button hide-mobile">ECC</a>
-    <a href="eds.html" class="navbar-item button hide-mobile">EDS</a>
-    <a href="#" class="active navbar-item button right hide-mobile">LOGIN</a>
-</div>
+	<!-- Barra de navegação default -->
+	<div class="navbar white left">
+		<a href="https://www.ufrn.br/" title="Ir para o Portal da UFRN" target="_blank" class="navbar-item logo">
+			<img class=".scale-down" src="https://logodownload.org/wp-content/uploads/2018/04/ufrn-logo.png" alt="Logomarca da UFRN" style="height:18px">
+		</a>
+		<a id="fabars" class="navbar-item button hide-default right padding-square" onclick="showMenu()" title="Abrir Menu de Navegação">
+			<i class="fa fa-bars"></i></a>
+		<a href="index.html" class="navbar-item button hide-mobile">INICIO</a>
+		<a href="#" class="active navbar-item button right hide-mobile">LOGIN</a>
+	</div>
 
-<!-- Barra de navegação mobile -->
-<div id="navMobile" class="top navbar-block center white hide hide-default left" style="margin-top:46px">
-  <a href="index.html" class="navbar-item button" onclick="showMenu()">INICIO</a>
-  <a href="bti.html" class="navbar-item button" onclick="showMenu()">BTI</a>
-  <a href="ecc.html" class="navbar-item button" onclick="showMenu()">ECC</a>
-  <a href="eds.html" class="navbar-item button" onclick="showMenu()">EDS</a>
-  <a href="#" class="active navbar-item button" onclick="showMenu()">LOGIN</a>
-</div>
+	<!-- Barra de navegação mobile -->
+	<div id="navMobile" class="top navbar-block center white hide hide-default left" style="margin-top:46px">
+		<a href="index.html" class="navbar-item button" onclick="showMenu()">INICIO</a>
+		<a href="login.html" class="active navbar-item button" onclick="showMenu()">LOGIN</a>
+	</div>
 </div>
 
 <div id="escurecer" class="menu_bg hide hide-default"></div>
 
 <div class="center_login">
-    <h1>Login</h1>
-    <form id="form-login" method="post" onsubmit="submitForm();return false;" action="/login">
+	<h1>Login</h1>
+	<form id="form-login" method="post" onsubmit="submitForm();return false;" action="/login">
 		<div class="txt_field">
 			<input id="username" name="username" type="text" required>
 			<span></span>
@@ -52,88 +46,65 @@
 			<span></span>
 			<label>Senha</label>
 		</div>
-		<div class="pass">Esqueceu a senha?</div>
-			<button type="submit">
-				login</button>
+		<div class="pass" ><a href="redefinir.html">Esqueceu a senha?</a></div>
+		<button id="button" type="submit">
+			login</button>
 		<div class="signup_link">
-			<a href="#">Cadastre-se</a>
+			<a href="cadastro.html">Cadastre-se</a>
 		</div>
-    </form>
+	</form>
 </div>
 
 <script>
 
-//Usada para habilitar o menu em tela pequena quando clicado no botão
-function showMenu() {
-  var x = document.getElementById("navMobile");
-  if (x.className.indexOf("show") == -1) {
-    x.className += " show";
-  } else { 
-    x.className = x.className.replace(" show", "");
-  }
-  var y = document.getElementById("fabars");
-  if (y.className.indexOf("active") == -1) {
-    y.className += " active";
-  } else { 
-    y.className = y.className.replace(" active", "");
-  }
-  var z = document.getElementById("escurecer");
-  if (z.className.indexOf("show") == -1) {
-    z.className += " show";
-  } else { 
-    z.className = z.className.replace(" show", "");
-  }
-}
-
-async function submitForm (){
-	const data = { username: document.querySelector("#username").value , password: document.querySelector("#password").value};
-
-	fetch("http://localhost:3000/login", {
-		method: "POST",
-		headers: {
-			"Content-Type": "application/json",
-		},
-		body: JSON.stringify(data),
-	})
-	.then((response) => {
-		if (response.status !== 200) {
-			throw new Error(response.message)
+	//Usada para habilitar o menu em tela pequena quando clicado no botão
+	function showMenu() {
+		var x = document.getElementById("navMobile");
+		if (x.className.indexOf("show") == -1) {
+			x.className += " show";
+		} else {
+			x.className = x.className.replace(" show", "");
 		}
-		return response.json()
-	})
-	.then((data) => {
-		window.location = "/bti.html"
-		alert("Success:"+JSON.stringify(data));
-	})
-	.catch((error) => {
-		alert("Error:" + error.message);
-	});
-	return false
+		var y = document.getElementById("fabars");
+		if (y.className.indexOf("active") == -1) {
+			y.className += " active";
+		} else {
+			y.className = y.className.replace(" active", "");
+		}
+		var z = document.getElementById("escurecer");
+		if (z.className.indexOf("show") == -1) {
+			z.className += " show";
+		} else {
+			z.className = z.className.replace(" show", "");
+		}
+	}
 
-	/*
+	async function submitForm (){
+		const data = { username: document.querySelector("#username").value , password: document.querySelector("#password").value};
 
-	try{
-		const response = await fetch("http://localhost:3000/login", {
+		fetch("http://localhost:3000/login", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
 			},
 			body: JSON.stringify(data),
-		}).then((response)=>response.json())
-		if(response.status!==200)
-		{
-			throw new Error(response.message)
-		}
+		})
+				.then((response) => {
+					if (response.status !== 200) {
+						throw new Error(response.message)
+					}
+					return response.json()
+				})
+				.then((data) => {
+					window.location = "/bti.html"
+					alert("Bem-vindo "+ data.name);
+				})
+				.catch((error) => {
+					alert('Senha incorreta. Tente novamente ou clique em "Esqueceu a senha?" para escolher uma outra.' + error.message);
+				});
+		return false
 
-		console.log(response)
-
-		alert("Success:" + JSON.stringify(response));
-	} catch(error) {
-		alert("Error:"+ error.message);
 	}
-	return false
-	 */
-}
 
 </script>
 

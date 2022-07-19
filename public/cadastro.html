@@ -1,0 +1,66 @@
+<!DOCTYÉ html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo-formulario.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<div>
+    <!-- Barra de navegação default -->
+    <div class="navbar white left">
+        <a href="https://www.ufrn.br/" title="Ir para o Portal da UFRN" target="_blank" class="navbar-item logo">
+            <img class=".scale-down" src="https://logodownload.org/wp-content/uploads/2018/04/ufrn-logo.png" alt="Logomarca da UFRN" style="height:18px">
+        </a>
+        <a id="fabars" class="navbar-item button hide-default right padding-square" onclick="showMenu()" title="Abrir Menu de Navegação">
+            <i class="fa fa-bars"></i></a>
+        <a href="index.html" class="navbar-item button hide-mobile">INICIO</a>
+        <a href="login.html" class="active navbar-item button right hide-mobile">LOGIN</a>
+    </div>
+
+    <!-- Barra de navegação mobile -->
+    <div id="navMobile" class="top navbar-block center white hide hide-default left" style="margin-top:46px">
+        <a href="index.html" class="navbar-item button" onclick="showMenu()">INICIO</a>
+        <a href="login.html" class="navbar-item button" onclick="showMenu()">LOGIN</a>
+    </div>
+</div>
+
+<div id="escurecer" class="menu_bg hide hide-default"></div>
+
+<div class="center_login">
+    <h1>Cadastrar</h1>
+    <form id="form-login" method="post" onsubmit="submitForm();return false;" action="/login">
+        <div class="txt_field">
+            <input id="username" name="username" type="text" required>
+            <span></span>
+            <label>Nome do(a) usuário(a)</label>
+        </div>
+        <div class="txt_field">
+            <input id="login" name="login" type="text" required>
+            <span></span>
+            <label>Login do(a) usuário(a)</label>
+        </div>
+        <div class="txt_field">
+            <input id="password" name="password"type="password" required>
+            <span></span>
+            <label>Senha</label>
+        </div>
+        <div class="txt_field">
+            <input id="password" name="password"type="password" required>
+            <span></span>
+            <label>Confirmar senha</label>
+        </div>
+        <button id="button" type="submit">Cadastrar</button>
+        <div class="signup_link">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
