@@ -5,12 +5,8 @@ const port = 3000
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
-// in latest body-parser use like below.
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// app.get('/', (req, res) => {
-//     res.send('Hello World!')
-// })
 
 app.post('/login', (req, res) => {
     console.log('chegou requisição')
